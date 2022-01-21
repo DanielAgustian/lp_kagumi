@@ -151,7 +151,7 @@
                                 back
                             @endslot
                             @slot('url')
-                            https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 Two-ways conversation → Increase brand visibility
@@ -255,7 +255,7 @@
                     <div class="swiper-wrapper">
                         @component('components.custom.testi-card')
                             @slot('img')
-                                https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('details')
                                 Terimakasih untuk para team Resonansi
@@ -265,7 +265,7 @@
                         @endcomponent
                         @component('components.custom.testi-card')
                             @slot('img')
-                                https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('details')
                                 Terimakasih untuk para team Resonansi
@@ -275,7 +275,7 @@
                         @endcomponent
                         @component('components.custom.testi-card')
                             @slot('img')
-                                https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('details')
                                 Terimakasih untuk para team Resonansi
@@ -292,9 +292,10 @@
         </section>
         <section class="section-form">
             <div class="container">
-                <h2 class="title-part text-center">Tertarik Untuk Bergabung & Berdiskusi Dengan 
-                   <span>Account Executive Kami</span> ??</h2>
-                   <div class="inner-padding-sm"></div>
+                <h2 class="title-part text-center">Tertarik Untuk Bergabung & Berdiskusi Dengan
+                    <span>Account Executive Kami</span> ??
+                </h2>
+                <div class="inner-padding-sm"></div>
                 <div class="row">
                     <div class="col-md-6 img-mbl-form">
                         <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form">
@@ -305,7 +306,7 @@
                                 <h5 class="text-center title-part mb-4">
                                     Yuk Bertemu dengan <span>Account Executive</span> Kami!
                                 </h5>
-                                
+
                                 <form action="" class="meeting-form">
                                     <input type="text" name="name" class="form-control" placeholder="Nama" required>
                                     <div class="form-error" id="error_name"></div>
@@ -335,7 +336,7 @@
                     </div>
                 </div>
             </div>
-          
+
         </section>
         <!--end::Container-->
     </div>
