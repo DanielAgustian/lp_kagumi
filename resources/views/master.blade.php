@@ -34,10 +34,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--end::Page Vendors Styles-->
 
 		<!--begin::Global Theme Styles(used by all pages)-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 		<link href="{{asset('asset/css/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('asset/plugins/prismjs/prismjs.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('asset/css/style.bundle.min.css')}}" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="{{'asset/css/custom.css'}}" type="text/css">
 		
 		<!--end::Global Theme Styles-->
 
