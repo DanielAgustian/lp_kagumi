@@ -151,7 +151,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                http://www.golfsleepyhollow.com/wp-content/uploads/2020/04/166-1665242_fakery-logo-transparent-dummy-logo-png-clipart-300x129.jpg
+                            https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 Two-ways conversation → Increase brand visibility
@@ -164,11 +164,10 @@
                                 front
                             @endslot
                             @slot('url')
-                                http://www.golfsleepyhollow.com/wp-content/uploads/2020/04/166-1665242_fakery-logo-transparent-dummy-logo-png-clipart-300x129.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 Actively drive engagement, keeps them coming back for more
-
                             @endslot
 
                         @endcomponent
@@ -178,7 +177,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                http://www.golfsleepyhollow.com/wp-content/uploads/2020/04/166-1665242_fakery-logo-transparent-dummy-logo-png-clipart-300x129.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 Customers actively involved with the development of the brand
@@ -191,7 +190,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                http://www.golfsleepyhollow.com/wp-content/uploads/2020/04/166-1665242_fakery-logo-transparent-dummy-logo-png-clipart-300x129.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 Building and protecting a brand’s reputation
@@ -204,7 +203,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                http://www.golfsleepyhollow.com/wp-content/uploads/2020/04/166-1665242_fakery-logo-transparent-dummy-logo-png-clipart-300x129.jpg
+                                https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
                             @slot('title')
                                 More chance to turn ordinary customer into loyal advocates
