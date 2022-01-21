@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link href="{{asset('asset/css/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('asset/plugins/prismjs/prismjs.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('asset/css/style.bundle.min.css')}}" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="{{'asset/css/custom.css'}}" type="text/css">
+		<link rel="stylesheet" href="{{'asset/css/custom.css'}}?v=1.0.0" type="text/css">
 		
 		<!--end::Global Theme Styles-->
 

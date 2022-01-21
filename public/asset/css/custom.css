@@ -215,7 +215,11 @@ section {
     width: 100%;
     object-fit: cover;
 }
-
+.img-logo-testi{
+    width: 100%;
+    object-fit: contain;
+    height: 180px;
+}
 @media screen and (max-width: 996px) {
     .layanan.white.card{
         margin-top: 0px;
