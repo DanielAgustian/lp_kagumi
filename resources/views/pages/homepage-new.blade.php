@@ -692,7 +692,7 @@
                 
 
                 <div class=" clearfix">
-                    <h2 class="text-center mx-auto bottommargin font-body title-section "
+                    <h2 class="text-center mx-md-auto mx-2 bottommargin font-body title-section "
                         style="max-width: 700px; font-size: 40px;">
                         Tertarik Untuk Bergabung & Berdiskusi Dengan
                         <span class="red-part">Account Executive</span> Kami?

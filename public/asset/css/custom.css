@@ -182,8 +182,8 @@ section {
 .item-kom  .my-title{
     text-align: center;
     color: #de1d38;
-    font-weight: 500;
-    
+    font-weight: 600;
+    font-size: 18px;
 }
 .img-kom{
     width: 100%;
@@ -394,5 +394,8 @@ span.red-part{
     .testi-title{
         text-align: center;
         
+    }
+    .img-client{
+        height: 140px;
     }
 }
