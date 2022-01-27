@@ -75,7 +75,7 @@
                     yang anda miliki <br>
                     ke segala penjuru dan membangun komunitas brand dengan kegiatan-kegiatan digital.</p>
                 <div class="inner-padding"></div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center wow fadeInLeft" data-wow-duration="0.9s" >
                     @component('components.custom.layanan-card')
                         @slot('color')
                             white
@@ -134,22 +134,22 @@
                 </div>
             </div>
         </section>
-        <section class="section-komunitas">
+        <section class="section-komunitas" style="background-color: white">
             <div class="inner-padding"></div>
             <div class="container">
                 <h2 class="title-part text-center"> <img src="{{ asset('images/logo-kagumi.png') }}" alt=""
                         class=""> Mengapa Brand Membutuhkan Sebuah Komunitas?</h2>
                 <div class="inner-padding"></div>
                 <div class="row">
-                    <div class="col-md-5 my-auto">
+                    <div class="col-md-5 my-auto wow fadeInLeft" data-wow-duration="0.9s">
                         <img src="{{ asset('images/group.png') }}" alt="" class="img-komunitas">
                     </div>
-                    <div class="col-md-7 my-auto">
+                    <div class="col-md-7 my-auto wow fadeInRight" data-wow-duration="0.9s">
                         @component('components.custom.itm-kom')
 
                             @slot('side')
                                 back
-                            @endslot
+                            @endslot                        
                             @slot('url')
                                 https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-
+            <div class="inner-padding"></div>
         </section>
         <!--begin::Container-->
         <section class="section-client">
@@ -325,7 +325,7 @@
                                         required>
                                     <div class="form-error" id="error_time"></div>
                                     <div class="d-flex justify-content-center mt-7">
-                                        <button class="btn btn-gold">
+                                        <button class="btn btn-prim">
                                             Book Now!
                                         </button>
                                     </div>

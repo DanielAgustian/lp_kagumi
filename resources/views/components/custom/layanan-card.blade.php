@@ -10,12 +10,12 @@
             </div>
         </div>
     @else
-        <div class="layanan white card">
+        <div class="layanan white card shadow">
             
             <div class="card-body">
                 <div class="d-flex flex-column justify-content-center h-100">
                     <img src="{{ $url }}" alt="" class="img-layanan">
-                    <h6 class="title-layanan text-center">{{ $title }}</h6>
+                    <h5 class="title-layanan text-center">{{ $title }}</h5>
                 </div>
                 
             </div>

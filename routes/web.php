@@ -14,9 +14,11 @@ use App\Http\Controllers\LandingController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 //Route::get('/induk-produk', [ProductController::class, 'indukProduk'])->name('indukProduk');
 
 Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
+Route::get('/new', [LandingController::class, 'homepageNew'])->name('homepageNew');
+Route::get('/landing', [LandingController::class, 'landing'])->name('landingPage');
