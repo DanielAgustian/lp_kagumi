@@ -106,7 +106,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                 https://image.pngaaa.com/532/3498532-middle.png
                             @endslot
                             @slot('title')
-                                Live Streaming
+                                Cross Platform Streaming
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')

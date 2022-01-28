@@ -106,7 +106,7 @@
                                 https://image.pngaaa.com/532/3498532-middle.png
                             @endslot
                             @slot('title')
-                                Live Streaming
+                                Cross Platform Streaming
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')
