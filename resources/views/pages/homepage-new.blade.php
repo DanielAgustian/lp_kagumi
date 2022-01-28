@@ -2,7 +2,7 @@
 
 @section('banner')
     <section id="slider" class="slider-element min-vh-100 bgchanger include-header"
-        style="background-color: white; background-image: url('one-page/images/page/watch-bg.png'); background-position: center center; background-size: cover;">
+        style="background-color: #de1d38 ; background-image: url('one-page/images/page/watch-bg.png'); background-position: center center; background-size: cover;">
         <div class="slider-inner">
 
             <div class="vertical-middle slider-element-fade">
@@ -12,11 +12,11 @@
                             <div class="emphasis-title mb-0">
 
                                 <h2 class="mt-2 fw-semibold "
-                                    style=" color: #de1d38; line-height: 1.3; letter-spacing: -2px;">
+                                    style=" color: white; line-height: 1.3; letter-spacing: -2px;">
                                     Mengapa Brand Anda Perlu
                                     Bergabung Dengan Kagumi?
                                 </h2>
-                                <span class=" mt-3 d-block details-banner" style="">Kagumi hadir untuk membantu membangun
+                                <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu membangun
                                     komunitas yang loyal bagi brand melalui Digital
                                     Activation dan mengubahnya menjadi aset yang
                                     berharga</span>
@@ -25,7 +25,7 @@
                                         class="button button-circle btn-gold button-light  button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
                                         Now</a>
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-prim button-light  button-large text-white mt-md-4 mt-3 nott ls0">Our
+                                        class="button button-circle btn-white-alt button-light  button-large text-white mt-md-4 mt-3 nott ls0">Our
                                         Client</a>
                                 </div>
 
@@ -114,10 +114,10 @@
                                 white
                             @endslot
                             @slot('url')
-                                https://www.goersapp.com/gem/images/KV-p-500.png
+                                {{asset('images/content-management.png')}}
                             @endslot
                             @slot('title')
-                                Online Event
+                               Content Creator Management
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')
@@ -125,10 +125,10 @@
                                 red
                             @endslot
                             @slot('url')
-                                https://image.pngaaa.com/532/3498532-middle.png
+                            https://taktixdigital.id/images/modules/content/images/p_digital-activation.png
                             @endslot
                             @slot('title')
-                                Live Streaming
+                                Digital Activation
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')
@@ -136,10 +136,10 @@
                                 white
                             @endslot
                             @slot('url')
-                                https://www.goersapp.com/gem/images/KV-p-500.png
+                            https://www.pngall.com/wp-content/uploads/5/Multimedia-PNG-Clipart.png
                             @endslot
                             @slot('title')
-                                Online Event
+                                Multimedia Specialist
                             @endslot
                         @endcomponent
                     </div>
@@ -759,7 +759,7 @@
                                         <div class="col-12 center mb-4">
                                             <button class="button button-border button-circle fw-medium ms-0 topmargin-sm"
                                                 type="submit" id="template-contactform-submit"
-                                                name="template-contactform-submit" value="submit">Send Message</button>
+                                                name="template-contactform-submit" value="submit">Join Now</button>
                                             <br>
                                             <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our
                                                 best to

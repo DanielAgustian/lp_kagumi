@@ -4,7 +4,7 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
+    <meta name="author" content="Yokesen" />
 
     <!-- Stylesheets
  ============================================= -->
@@ -31,7 +31,7 @@
 
     <!-- Document Title
  ============================================= -->
-    <title>Watch - One Page Module | Canvas</title>
+    <title>Yokesen Media Kagumi </title>
 
     <style>
         .font-secondary {
@@ -187,7 +187,7 @@
 
     <div class="body-overlay"></div>
 
-    <div id="side-panel" class="bgchanger">
+    {{-- <div id="side-panel" class="bgchanger">
 
         <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a>
         </div>
@@ -262,12 +262,14 @@
 
         </div>
 
-    </div>
+    </div> --}}
 
     <!-- Document Wrapper
  ============================================= -->
     <div id="wrapper" class="clearfix">
-
+        <div class="btn-wa" data-toggle="tooltip" title="Kami Siap Membantu anda">
+            <i class="fab fa-whatsapp"></i>
+        </div>
         <!-- Header
   ============================================= -->
         <header id="header" class="full-header transparent-header border-full-header header-size-custom"
@@ -276,13 +278,12 @@
                 <div class="container">
                     <div class="header-row">
 
-                        <!-- Logo
-      ============================================= -->
+
                         <div id="logo">
-                            <a href="{{route('homepageNew')}}" class="standard-logo"
+                            <a href="{{ route('homepageNew') }}" class="standard-logo"
                                 data-dark-logo="{{ asset('images/logo-kagumi.png') }}"><img
                                     src="{{ asset('images/logo-kagumi.png') }}" alt="Canvas Logo"></a>
-                            <a href="{{route('homepageNew')}}" class="retina-logo"
+                            <a href="{{ route('homepageNew') }}" class="retina-logo"
                                 data-dark-logo="{{ asset('images/logo-kagumi.png') }}"><img
                                     src="{{ asset('images/logo-kagumi.png') }}" alt="Canvas Logo"></a>
                         </div><!-- #logo end -->
@@ -295,7 +296,7 @@
 
 						</div> --}}
 
-                        <div id="primary-menu-trigger" class="{{set_none_navbar('landingPage')}}">
+                        <div id="primary-menu-trigger" class="{{ set_none_navbar('landingPage') }}">
                             <svg class="svg-trigger" viewBox="0 0 100 100">
                                 <path
                                     d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
@@ -307,12 +308,11 @@
                             </svg>
                         </div>
 
-                        <!-- Primary Navigation
-      ============================================= -->
-                        <nav class="primary-menu" >
+                        <!-- Primary Navigation============================================= -->
+                        <nav class="primary-menu">
 
-                            <ul class="one-page-menu menu-container {{set_none_navbar('landingPage')}}" data-easing="easeInOutExpo" data-speed="1250"
-                                data-offset="65">
+                            <ul class="one-page-menu menu-container {{ set_none_navbar('landingPage') }}"
+                                data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
                                 <li class="menu-item">
                                     <a href="#" class="menu-link" data-href="#section-about">
@@ -323,6 +323,11 @@
                                 <li class="menu-item">
                                     <a href="#" class="menu-link" data-href="#section-services">
                                         <div>Services</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link" data-href="#section-services">
+                                        <div>Our Client</div>
                                     </a>
                                 </li>
                                 <li class="menu-item">
@@ -359,7 +364,7 @@
   ============================================= -->
         <footer id="footer" class="dark border-0">
 
-            <div class="container center {{set_none_navbar('landingPage')}}">
+            <div class="container center {{ set_none_navbar('landingPage') }}">
                 <div class="footer-widgets-wrap">
 
                     <div class="row mx-auto clearfix">
@@ -374,6 +379,8 @@
                                             data-speed="1250" data-offset="70">About Us</a></li>
                                     <li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo"
                                             data-speed="1250" data-offset="70">Services</a></li>
+                                    <li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo"
+                                            data-speed="1250" data-offset="70">Our Client</a></li>
                                     <li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo"
                                             data-speed="1250" data-offset="70">Blog</a></li>
                                     <li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo"
@@ -403,8 +410,9 @@
                                 <h4>Contact</h4>
 
                                 <p class="lead">Jalan Lingkar Luar Barat
-								 <br>Kel. Panunggangan, Kec. Pinang,
-								 <br>Banten 15143</p>
+                                    <br>Kel. Panunggangan, Kec. Pinang,
+                                    <br>Banten 15143
+                                </p>
 
                                 {{-- <div class="center topmargin-sm">
                                     <a href="#" class="social-icon inline-block border-0 si-small si-facebook"
@@ -439,7 +447,7 @@
 
             <div id="copyrights">
                 <div class="container center clearfix">
-                    Copyrights Canvas 2020 | Powered by Yokesen
+                    Copyrights 2022 | Powered by Yokesen
                 </div>
             </div>
 
@@ -473,6 +481,25 @@
                 });
             });
         });
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+    <script>
+        $('.btn-wa').on('click', function() {
+            var y = Math.random();
+            if (y < 0.5) {
+                y = 0
+            } else {
+                y = 1
+            }
+            let wa = [6281388886435, 6281313002582]
+            window.open(
+                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20servis%20di%20Yokesen`
+            )
+        })
     </script>
     @yield('js')
 </body>

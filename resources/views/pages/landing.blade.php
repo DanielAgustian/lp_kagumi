@@ -1,69 +1,69 @@
 @extends('master2')
 
 @section('banner')
-    <section id="slider" class="slider-element min-vh-100 bgchanger include-header"
-        style="background-color: white; background-image: url('one-page/images/page/watch-bg.png'); background-position: center center; background-size: cover;">
-        <div class="slider-inner">
+<section id="slider" class="slider-element min-vh-100 bgchanger include-header"
+style="background-color: #de1d38 ; background-image: url('one-page/images/page/watch-bg.png'); background-position: center center; background-size: cover;">
+<div class="slider-inner">
 
-            <div class="vertical-middle slider-element-fade">
-                <div class="container py-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-1 order-2 text-center text-md-start">
-                            <div class="emphasis-title mb-0">
+    <div class="vertical-middle slider-element-fade">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1 order-2 text-center text-md-start">
+                    <div class="emphasis-title mb-0">
 
-                                <h2 class="mt-2 fw-semibold "
-                                    style=" color: #de1d38; line-height: 1.3; letter-spacing: -2px;">
-                                    Mengapa Brand Anda Perlu
-                                    Bergabung Dengan Kagumi?
-                                </h2>
-                                <span class=" mt-3 d-block details-banner" style="">Kagumi hadir untuk membantu membangun
-                                    komunitas yang loyal bagi brand melalui Digital
-                                    Activation dan mengubahnya menjadi aset yang
-                                    berharga</span>
-                                <div class="d-flex-bar">
-                                    <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-gold button-light  button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
-                                        Now</a>
-                                    <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-prim button-light  button-large text-white mt-md-4 mt-3 nott ls0">Our
-                                        Client</a>
-                                </div>
-
-                            </div>
+                        <h2 class="mt-2 fw-semibold "
+                            style=" color: white; line-height: 1.3; letter-spacing: -2px;">
+                            Mengapa Brand Anda Perlu
+                            Bergabung Dengan Kagumi?
+                        </h2>
+                        <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu membangun
+                            komunitas yang loyal bagi brand melalui Digital
+                            Activation dan mengubahnya menjadi aset yang
+                            berharga</span>
+                        <div class="d-flex-bar">
+                            <a href="#" data-animate="fadeInUp" data-delay="600"
+                                class="button button-circle btn-gold button-light  button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
+                                Now</a>
+                            <a href="#" data-animate="fadeInUp" data-delay="600"
+                                class="button button-circle btn-white-alt button-light  button-large text-white mt-md-4 mt-3 nott ls0">Our
+                                Client</a>
                         </div>
 
-                        <div class="col-md-6 order-md-2 order-1">
-                            <div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false"
-                                data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
-                                {{-- <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#EEE">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#daec66">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#F1D4CA"> --}}
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
-                            </div>
+                    </div>
+                </div>
 
-                            {{-- <div id="oc-watch-bg"
-                                style="background: #E25B45; width: 360px; height: 360px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; border-radius: 50%;">
-                            </div> --}}
-                        </div>
+                <div class="col-md-6 order-md-2 order-1">
+                    <div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false"
+                        data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
+                        {{-- <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#EEE">
+                        <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#daec66">
+                        <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#F1D4CA"> --}}
+                        <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
+                            alt="Watch">
+                        <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
+                            alt="Watch">
+                        <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
+                            alt="Watch">
                     </div>
 
+                    {{-- <div id="oc-watch-bg"
+                        style="background: #E25B45; width: 360px; height: 360px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; border-radius: 50%;">
+                    </div> --}}
                 </div>
             </div>
 
-            <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70"
-                class="one-page-arrow">
-                <div class="scroll-inner">
-                    <div class="scroll-wheel"></div>
-                </div>
-            </a>
-
         </div>
-    </section>
+    </div>
+
+    <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70"
+        class="one-page-arrow">
+        <div class="scroll-inner">
+            <div class="scroll-wheel"></div>
+        </div>
+    </a>
+
+</div>
+</section>
 @endsection
 
 @section('content')
@@ -114,10 +114,10 @@
                                 white
                             @endslot
                             @slot('url')
-                                https://www.goersapp.com/gem/images/KV-p-500.png
+                                {{asset('images/content-management.png')}}
                             @endslot
                             @slot('title')
-                                Online Event
+                               Content Creator Management
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')
@@ -125,10 +125,10 @@
                                 red
                             @endslot
                             @slot('url')
-                                https://image.pngaaa.com/532/3498532-middle.png
+                            https://taktixdigital.id/images/modules/content/images/p_digital-activation.png
                             @endslot
                             @slot('title')
-                                Live Streaming
+                                Digital Activation
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-card')
@@ -136,10 +136,10 @@
                                 white
                             @endslot
                             @slot('url')
-                                https://www.goersapp.com/gem/images/KV-p-500.png
+                            https://www.pngall.com/wp-content/uploads/5/Multimedia-PNG-Clipart.png
                             @endslot
                             @slot('title')
-                                Online Event
+                                Multimedia Specialist
                             @endslot
                         @endcomponent
                     </div>
@@ -759,7 +759,7 @@
                                         <div class="col-12 center mb-4">
                                             <button class="button button-border button-circle fw-medium ms-0 topmargin-sm"
                                                 type="submit" id="template-contactform-submit"
-                                                name="template-contactform-submit" value="submit">Send Message</button>
+                                                name="template-contactform-submit" value="submit">Join Now</button>
                                             <br>
                                             <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our
                                                 best to
@@ -789,7 +789,7 @@
                     </div>
 
                 </div>
-                <div class="row mx-0 topmargin-lg align-items-stretch">
+                {{-- <div class="row mx-0 topmargin-lg align-items-stretch">
                     <div class="col-lg-8 col-md-6 d-none d-md-block px-0">
                         <iframe class="h-100 w-100"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2661524317405!2d106.64887841476916!3d-6.228599195491247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb588b4591bf%3A0x94e2c809ac22a79e!2sMedia%20Kagumi%20From%20Yokesen!5e0!3m2!1sen!2sid!4v1643271485111!5m2!1sen!2sid"
@@ -813,7 +813,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </div>

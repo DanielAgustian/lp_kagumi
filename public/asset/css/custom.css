@@ -10,7 +10,12 @@
 section {
     margin-bottom: 90px;
 }
-
+#header{
+    background: white !important;
+}
+#header.transparent-header, #header.transparent-header:not(.sticky-header) #header-wrap{
+    background: white !important;
+}
 .banner-hero {
     background-color: #de1d38;
     min-height: 480px;
@@ -42,8 +47,8 @@ section {
     
 }
 .btn-white-alt {
-    background-color: white;
-    color: #de1d38;
+    background-color: white !important;
+    color: #de1d38 !important;
     font-weight: 600;
 }
 .btn-white-alt:hover{
@@ -349,6 +354,24 @@ span.red-part{
  }
  #footer .footer-widgets-wrap{
      padding: 45px 0px;
+ }
+ .btn-wa{
+     cursor: pointer;
+     z-index: 1000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     position: fixed;
+     bottom: 15px;
+        right: 10px;
+    background-color: #25D366;
+    border-radius: 8px;
+ }
+ .btn-wa i{
+     color: white;
+     font-size: 38px;
  }
 @media screen and (max-width: 450px) {
     #oc-watch .owl-item img{

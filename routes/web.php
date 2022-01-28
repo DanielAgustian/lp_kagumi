@@ -19,6 +19,6 @@ use App\Http\Controllers\LandingController;
 // });
 //Route::get('/induk-produk', [ProductController::class, 'indukProduk'])->name('indukProduk');
 
-Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
-Route::get('/new', [LandingController::class, 'homepageNew'])->name('homepageNew');
-Route::get('/landing', [LandingController::class, 'landing'])->name('landingPage');
+// Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
+Route::get('/', [LandingController::class, 'homepageNew'])->name('homepageNew');
+Route::get('/digital-activation-gamification', [LandingController::class, 'landing'])->name('landingPage');
