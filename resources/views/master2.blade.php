@@ -31,7 +31,7 @@
 
     <!-- Document Title
  ============================================= -->
-    <title>Yokesen Media Kagumi </title>
+    <title>Media Kagumi </title>
 
     <style>
         .font-secondary {
