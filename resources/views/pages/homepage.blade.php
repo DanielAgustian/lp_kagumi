@@ -149,7 +149,7 @@
 
                             @slot('side')
                                 back
-                            @endslot                        
+                            @endslot
                             @slot('url')
                                 https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png
                             @endslot
@@ -223,23 +223,23 @@
                 <div class="inner-padding"></div>
                 <div class="row">
                     <div class="col-md-3 col-6">
-                        <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client">
+                        <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client">
                         <h6 class="title-client">PT .DTAt</h6>
                     </div>
                     <div class="col-md-3 col-6">
-                        <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client">
+                        <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client">
                         <h6 class="title-client">PT .DTAt</h6>
                     </div>
                     <div class="col-md-3 col-6">
-                        <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client">
+                        <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client">
                         <h6 class="title-client">PT .DTAt</h6>
                     </div>
                     <div class="col-md-3 col-6">
-                        <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client">
+                        <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client">
                         <h6 class="title-client">PT .DTAt</h6>
                     </div>
                     <div class="col-md-3 col-6">
-                        <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client">
+                        <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client">
                         <h6 class="title-client">PT .DTAt</h6>
                     </div>
                 </div>

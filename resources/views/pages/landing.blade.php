@@ -518,7 +518,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="col-lg-4 col-md-6 col-padding">
                                 <div class="feature-box fbox-center fbox-dark fbox-plain">
@@ -537,7 +537,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                         <a href="#"><i class="icon-et-puzzle op-gradient-icon"></i></a>
                                     </div>
                                     <div class="fbox-content fbox-content-sm">
-                                        <h3>Customers actively involved with the development of the brand 
+                                        <h3>Customers actively involved with the development of the brand
                                         </h3>
                                     </div>
                                 </div>
@@ -548,7 +548,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                         <a href="#"><i class="icon-et-gears op-gradient-icon"></i></a>
                                     </div>
                                     <div class="fbox-content fbox-content-sm">
-                                        <h3>Building and protecting a brand’s reputation 
+                                        <h3>Building and protecting a brand’s reputation
                                         </h3>
                                     </div>
                                 </div>
@@ -572,7 +572,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                         <h3>Industrial Support</h3>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div> --}}
                     </div>
 
@@ -601,23 +601,23 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                     <div class="inner-padding"></div>
                     <div class="row">
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                     </div>
@@ -644,7 +644,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                                                 <div class="d-flex align-items-center justify-content-center">
                                                     <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
                                                 </div>
-                                                
+
                                                 <p>Similique fugit repellendus expedita excepturi iure perferendis
                                                     provident quia eaque vero numquam?</p>
                                                 <div class="testi-meta">
@@ -689,7 +689,7 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
 
             <div id="section-contact" class="page-section pt-4" style="padding-bottom: 20px !important">
 
-                
+
 
                 <div class=" clearfix">
                     <h2 class="text-center mx-md-auto mx-2 bottommargin font-body title-section "
@@ -700,87 +700,97 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
                     <div class="mx-auto topmargin" style="">
                         <div class="row">
                             <div class="col-md-6 ">
-                                <div class="form-widget ">
 
-                                    <div class="form-result"></div>
 
-                                    <form class="row mb-0" id="template-contactform" name="template-contactform"
-                                        action="include/form.php" method="post">
+                                <div class="form-result"></div>
 
-                                        <div class="form-process">
-                                            <div class="css3-spinner">
-                                                <div class="css3-spinner-scale-ripple">
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                </div>
-                                            </div>
+                                <form class="row mb-0 meeting-form" id="template-contactform" name="template-contactform"
+                                    action="{{route('postMeeting')}}" method="post">
+                                    @csrf
+
+
+                                    <div class="col-md-12 mb-4">
+                                        <input type="text" id="template-contactform-name"
+                                            name="name"
+                                            class="sm-form-control border-form-control required" placeholder="Name" value="{{old('name')}}" />
+                                        <div style="color: red; font-size:11px" id="err-name">
+
                                         </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <input type="email" id="template-contactform-email"
+                                            name="email"
+                                            class="required email sm-form-control border-form-control"
+                                            placeholder="Email Address" value="{{old('email')}}"/>
+                                        <div style="color: red; font-size:11px" id="err-email">
 
-                                        <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-name"
-                                                name="template-contactform-name" value=""
-                                                class="sm-form-control border-form-control required" placeholder="Name" />
                                         </div>
-                                        <div class="col-md-12 mb-4">
-                                            <input type="email" id="template-contactform-email"
-                                                name="template-contactform-email" value=""
-                                                class="required email sm-form-control border-form-control"
-                                                placeholder="Email Address" />
+                                    </div>
+
+                                    <div class="w-100"></div>
+
+                                    <div class="col-md-12 mb-4">
+                                        <input type="text" id="template-contactform-phone"
+                                            name="phone" value="{{old('phone')}}"
+                                            class="sm-form-control border-form-control" placeholder="Phone" />
+                                        <div style="color: red; font-size:11px" id="err-phone">
+
                                         </div>
+                                    </div>
 
-                                        <div class="w-100"></div>
+                                    <div class="col-md-12 mb-4">
+                                        <input type="text" id="company" name="company" value="{{old('company')}}"
+                                            class="required sm-form-control border-form-control"
+                                            placeholder="Company Name" />
+                                        <div style="color: red; font-size:11px" id="err-company">
 
-                                        <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-phone"
-                                                name="template-contactform-phone" value=""
-                                                class="sm-form-control border-form-control" placeholder="Phone" />
                                         </div>
+                                    </div>
 
-                                        <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-subject" name="company" value=""
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="Company Name" />
+                                    <div class="w-100"></div>
+
+                                    <div class="col-md-12 mb-4">
+                                        <input type="date" id="" name="date" value="{{old('date')}}"
+                                            class="required sm-form-control border-form-control"
+                                            placeholder="Tanggal Bertemu" />
+                                        <div style="color: red; font-size:11px" id="err-date">
+
                                         </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <input type="time" id="template-contactform-subject" name="time" value="{{old('time')}}"
+                                            class="required sm-form-control border-form-control"
+                                            placeholder="jam Bertemu" />
+                                        <div style="color: red; font-size:11px" id="err-time">
 
-                                        <div class="w-100"></div>
-
-                                        <div class="col-md-12 mb-4">
-                                            <input type="date" id="template-contactform-subject" name="date" value=""
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="Tanggal Bertemu" />
                                         </div>
-                                        <div class="col-md-12 mb-4">
-                                            <input type="time" id="template-contactform-subject" name="time" value=""
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="jam Bertemu" />
-                                        </div>
+                                    </div>
+                                    <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
+                                    <div class="col-12 center mb-4">
+                                        <button class="button button-border btn-sub button-circle fw-medium ms-0 topmargin-sm"
+                                            type="submit" id="template-contactform-submit" disabled
+                                            name="template-contactform-submit" value="submit">Join Now</button>
+                                        <br>
+                                        <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our
+                                            best to
+                                            get back to you within 2-3 working days.</small>
+                                    </div>
 
-                                        <div class="col-12 center mb-4">
-                                            <button class="button button-border button-circle fw-medium ms-0 topmargin-sm"
-                                                type="submit" id="template-contactform-submit"
-                                                name="template-contactform-submit" value="submit">Join Now</button>
-                                            <br>
-                                            <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our
-                                                best to
-                                                get back to you within 6-8 working hours.</small>
-                                        </div>
+                                    <div class="w-100"></div>
 
-                                        <div class="w-100"></div>
+                                    <div class="col-12 d-none">
+                                        <input type="text" id="template-contactform-botcheck"
+                                            name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                    </div>
 
-                                        <div class="col-12 d-none">
-                                            <input type="text" id="template-contactform-botcheck"
-                                                name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                        </div>
+                                    <input type="hidden" name="prefix" value="template-contactform-">
 
-                                        <input type="hidden" name="prefix" value="template-contactform-">
+                                </form>
 
-                                    </form>
 
-                                </div>
                             </div>
                             <div class="col-md-6">
-                                <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form d-md-block d-none">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" class="img-form" frameborder="0" scrolling="no"></iframe>
 
                             </div>
                         </div>
@@ -821,5 +831,168 @@ style="background-color: #de1d38 ; background-image: url('one-page/images/page/w
 @endsection
 
 @section('js')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript">
+$('.meeting-form').on('submit', function(e){
 
+       let errorEmail = false;
+       let errorName = false;
+       let errorPhone = false;
+       let errorCompany = false;
+       let errorDate = false;
+       let errorTime = false;
+
+       let email = $('input[name="email"]').val() ?? "";
+       let name = $('input[name="name"]').val() ;
+       let phone = $('input[name="phone"]').val();
+       let company = $('input[name="company"]').val();
+       let date = $('input[name="date"]').val();
+       let time = $('input[name="time"]').val();
+       var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+       if (!email.match(mailformat) ) {
+         console.log("wrong email");
+         errorEmail = true;
+         $('#err-email').text('Email Tidak Valid');
+
+       }else{
+         $('#err-email').text('');
+       }
+
+       if (name.length < 2) {
+         console.log("name empty");
+         errorName = true;
+         $('#err-name').text('Nama tidak valid');
+       }else{
+         $('#err-name').text('');
+       }
+       if (phone.length < 9 ) {
+         console.log("phone error");
+         errorPhone = true;
+         $('#err-phone').text('Nomor Kamu Tidak Valid');
+       }else{
+         $('#err-phone').text('');
+       }
+
+       if (company.length< 3) {
+         console.log("company error");
+         errorCompany = true;
+         $('#err-company').text('Nama Perusahaan Tidak Valid');
+       }else{
+         $('#err-company').text('');
+       }
+
+       if (date.length< 5) {
+         console.log("date empty");
+         errorDate = true;
+         $('#err-date').text('Tanggal Bertemu Tidak valid');
+       }else{
+         $('#err-date').text('');
+       }
+
+       if (time.length< 4) {
+         console.log("Time empty");
+         errorTime = true;
+         $('#err-time').text('Waktu Bertemu Tidak Valid');
+       }else{
+         $('#err-time').text('');
+       }
+
+
+       if(errorName || errorEmail || errorPhone ||errorCompany || errorDate || errorTime){
+         console.log("ONE OF THEM IS EMPTY/WRONG");
+         e.preventDefault();
+       }
+     })
+
+ </script>
+ <script type="text/javascript">
+     function recaptchaCallback(){
+         $('.btn-sub').removeAttr('disabled');
+     }
+ </script>
+ @if (Session::has('successMsg'))
+   <script>
+       console.log('success');
+       Swal.fire(
+           'Success!',
+           'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
+           'success'
+       );
+   </script>
+   <script type="text/javascript">
+
+     $(function(){
+       console.log("Begin");
+
+       $.ajax({
+           type: "GET",
+           url: "{{ route('getFutureEvent') }}",
+
+           success: function(result) {
+               console.log("Success");
+               // alert("Success");
+           },
+           error: function(xhr) {
+               //Do Something to handle error
+               console.log(xhr.responseText);
+
+
+           }
+       });
+     });
+   </script>
+@endif
+
+@if (Session::has('fullBooked'))
+   <script>
+
+       Swal.fire(
+           'Gagal',
+           'Jadwal sudah penuh pada hari tersebut! Silahkan pilih hari dan jam lain!',
+           'error'
+       );
+   </script>
+@endif
+@if (Session::has('errorBeforeDate'))
+   <script>
+
+       Swal.fire(
+           'Gagal',
+           'Kamu tidak bisa memilih jadwal diskusi sebelum hari ini!',
+           'error'
+       );
+   </script>
+@endif
+@if (Session::has('holidayError'))
+   <script>
+
+       Swal.fire(
+           'Gagal',
+           'Account Executive tidak menerima jadwal diskusi pada hari Sabtu dan Minggu.',
+           'error'
+       );
+   </script>
+@endif
+@if (Session::has('fullBookedjam'))
+   <script>
+
+       Swal.fire(
+           'Gagal',
+           'Jadwal sudah terisi pada jam tersebut! Silahkan pilih jam lain!',
+           'error'
+       );
+   </script>
+@endif
+@if (Session::has('errorCapcha'))
+   <script>
+
+       Swal.fire(
+           'Gagal',
+           'Capcha kamu kosong!',
+           'error'
+       );
+   </script>
+@endif
 @endsection

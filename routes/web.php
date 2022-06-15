@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
-
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CalendarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,14 @@ use App\Http\Controllers\LandingController;
 // Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
 Route::get('/', [LandingController::class, 'homepageNew'])->name('homepageNew');
 Route::get('/digital-activation-gamification', [LandingController::class, 'landing'])->name('landingPage');
+
+
+
+
+// Get Calendar Process
+
+Route::get('/get-future-event', [CalendarController::class, 'getFutureEvent'])->name('getFutureEvent');
+
+// POST PROCESS
+
+Route::post('/post-meeting', [PostController::class, 'createMeeting'])->name('postMeeting');

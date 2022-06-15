@@ -1,5 +1,10 @@
 @extends('master2')
-
+@section('css')
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+@endsection
 @section('banner')
     <section id="slider" class="slider-element min-vh-100 bgchanger include-header"
         style="background-color: #de1d38 ; background-image: url('one-page/images/page/watch-bg.png'); background-position: center center; background-size: cover;">
@@ -8,7 +13,7 @@
             <div class="vertical-middle slider-element-fade">
                 <div class="container py-5">
                     <div class="row align-items-center">
-                        <div class="col-md-6 order-md-1 order-2 text-center text-md-start">
+                        <div class=" col-md-6 order-md-1 order-2 text-center text-md-start">
                             <div class="emphasis-title mb-0">
 
                                 <h2 class="mt-2 fw-semibold "
@@ -22,33 +27,48 @@
                                     berharga</span>
                                 <div class="d-flex-bar">
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-gold button-light  button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
+                                        class="button button-circle btn-gold button-light btn-join button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
                                         Now</a>
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-white-alt button-light  button-large text-white mt-md-4 mt-3 nott ls0">Our
+                                        class="button button-circle btn-white-alt button-light btn-client  button-large text-white mt-md-4 mt-3 nott ls0">Our
                                         Client</a>
                                 </div>
 
                             </div>
                         </div>
 
-                        <div class="col-md-6 order-md-2 order-1">
-                            <div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false"
+                        <div class=" col-md-6 order-md-2 order-1 ">
+                            <!-- <div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false"
                                 data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
-                                {{-- <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#EEE">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#daec66">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg" alt="Watch" data-bg="#F1D4CA"> --}}
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
-                                <img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Featured.jpg"
-                                    alt="Watch">
+
+
                             </div>
 
                             {{-- <div id="oc-watch-bg"
                                 style="background: #E25B45; width: 360px; height: 360px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; border-radius: 50%;">
-                            </div> --}}
+                            </div> --}} -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="{{asset('images/banner/kagumi_content_creator.png')}}?v=1.00.0" alt="Watch">
+
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="{{asset('images/banner/kagumi_cross_platform_streaming.png')}}?v=1.00.0" alt="Watch">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="{{asset('images/banner/kagumi_digital_activation.png')}}?v=1.00.0" alt="Watch">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="{{asset('images/banner/kagumi_multimedia_specialist.png')}}?v=1.00.0" alt="Watch">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="{{asset('images/banner/kagumi_online_event.png')}}?v=1.00.0" alt="Watch">
+                                  </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
                         </div>
                     </div>
 
@@ -74,7 +94,7 @@
 
                 <div class="container clearfix">
 
-                    <h2 class="mx-auto bottommargin font-body title-section " style="max-width: 700px; font-size: 40px;">
+                    <h2 class="mx-auto font-body title-section " style="max-width: 700px; font-size: 40px;">
                         Layanan Apa Saja Yang Disediakan oleh Kagumi?</h2>
 
                     <p class="lead mx-auto bottommargin" style="">Kami bekerjasama dengan client untuk membantu anda
@@ -92,7 +112,7 @@
                                 white
                             @endslot
                             @slot('url')
-                                https://www.goersapp.com/gem/images/KV-p-500.png
+                                {{asset('images/banner/kagumi_online_event.png')}}?v=1.00.0
                             @endslot
                             @slot('title')
                                 Online Event
@@ -103,7 +123,7 @@
                                 red
                             @endslot
                             @slot('url')
-                                https://image.pngaaa.com/532/3498532-middle.png
+                                {{asset('images/banner/kagumi_cross_platform_streaming.png')}}?v=1.00.0
                             @endslot
                             @slot('title')
                                 Cross Platform Streaming
@@ -114,7 +134,7 @@
                                 white
                             @endslot
                             @slot('url')
-                                {{asset('images/content-management.png')}}
+                                {{asset('images/banner/kagumi_content_creator.png')}}?v=1.00.0
                             @endslot
                             @slot('title')
                                Content Creator Management
@@ -125,7 +145,7 @@
                                 red
                             @endslot
                             @slot('url')
-                            https://taktixdigital.id/images/modules/content/images/p_digital-activation.png
+                            {{asset('images/banner/kagumi_digital_activation.png')}}?v=1.00.0
                             @endslot
                             @slot('title')
                                 Digital Activation
@@ -136,7 +156,7 @@
                                 white
                             @endslot
                             @slot('url')
-                            https://www.pngall.com/wp-content/uploads/5/Multimedia-PNG-Clipart.png
+                            {{asset('images/banner/kagumi_multimedia_specialist.png')}}?v=1.00.0
                             @endslot
                             @slot('title')
                                 Multimedia Specialist
@@ -460,7 +480,8 @@
                                 front
                             @endslot
                             @slot('url')
-                            https://urbandiaries.in/wp-content/uploads/2017/09/301b.jpg @endslot
+                              https://fowmedia.com/wp-content/uploads/2017/04/8-Key-Steps-to-Driving-Employee-Engagement.jpg
+                            @endslot
                             @slot('title')
                                 Actively drive engagement, keeps them coming back for more
                             @endslot
@@ -518,7 +539,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="col-lg-4 col-md-6 col-padding">
                                 <div class="feature-box fbox-center fbox-dark fbox-plain">
@@ -537,7 +558,7 @@
                                         <a href="#"><i class="icon-et-puzzle op-gradient-icon"></i></a>
                                     </div>
                                     <div class="fbox-content fbox-content-sm">
-                                        <h3>Customers actively involved with the development of the brand 
+                                        <h3>Customers actively involved with the development of the brand
                                         </h3>
                                     </div>
                                 </div>
@@ -548,7 +569,7 @@
                                         <a href="#"><i class="icon-et-gears op-gradient-icon"></i></a>
                                     </div>
                                     <div class="fbox-content fbox-content-sm">
-                                        <h3>Building and protecting a brand’s reputation 
+                                        <h3>Building and protecting a brand’s reputation
                                         </h3>
                                     </div>
                                 </div>
@@ -572,7 +593,7 @@
                                         <h3>Industrial Support</h3>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div> --}}
                     </div>
 
@@ -583,7 +604,7 @@
                         <h2 class="mb-0 fw-light ls1">Tertarik dengan Layanan Kami? <a href="#"
                                 data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo"
                                 data-speed="1250"
-                                class="button button-border button-circle button-light button-large my-md-0 my-3 button-contact button-btw-sect"
+                                class="button button-border button-circle button-light button-large my-md-0 my-3 button-join button-btw-sect"
                                 style="position: relative; top: -3px;">Hubungi Kami</a></h2>
                     </div>
                 </div>
@@ -601,23 +622,23 @@
                     <div class="inner-padding"></div>
                     <div class="row">
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                         <div class="col-md-3 col-6">
-                            <img src="https://ipac.page/images/brand-logo-1.jpg" alt="" class="img-client shadow rounded">
+                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png" alt="" class="img-client shadow rounded">
                             <h5 class="title-client">PT .DTAt</h5>
                         </div>
                     </div>
@@ -635,23 +656,12 @@
                             <h2 class="mb-md-0 mb-3 fw-bold ls1 testi-title">Testimoni Klien </h2>
                         </div>
                         <div class="col-md-7">
-                            <div class="fslider testimonial testimonial-full bg-transparent border-0 shadow-none p-0"
+                            <!-- <div class="fslider testimonial testimonial-full bg-transparent border-0 shadow-none p-0"
                                 data-arrows="false">
                                 <div class="flexslider">
                                     <div class="slider-wrap">
                                         <div class="slide">
-                                            <div class="testi-content">
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
-                                                </div>
-                                                
-                                                <p>Similique fugit repellendus expedita excepturi iure perferendis
-                                                    provident quia eaque vero numquam?</p>
-                                                <div class="testi-meta">
-                                                    Steve Jobs
-                                                    <span>Apple Inc.</span>
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <div class="slide">
                                             <div class="testi-content">
@@ -680,90 +690,154 @@
                                     </div>
                                 </div>
                             </div>
+                             -->
+                             <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="testi-content">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
+                                        </div>
+
+                                        <p>Similique fugit repellendus expedita excepturi iure perferendis
+                                            provident quia eaque vero numquam?</p>
+                                        <div class="testi-meta">
+                                            Steve Jobs
+                                            <span>Apple Inc.</span>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="testi-content">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
+                                        </div>
+
+                                        <p>Similique fugit repellendus expedita excepturi iure perferendis
+                                            provident quia eaque vero numquam?</p>
+                                        <div class="testi-meta">
+                                            Steve Jobs
+                                            <span>Apple Inc.</span>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="testi-content">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
+                                        </div>
+
+                                        <p>Similique fugit repellendus expedita excepturi iure perferendis
+                                            provident quia eaque vero numquam?</p>
+                                        <div class="testi-meta">
+                                            Steve Jobs
+                                            <span>Apple Inc.</span>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
             </div>
+            <div class="" style="height: 65px;">
 
-            <div id="section-contact" class="page-section pt-4" style="padding-bottom: 20px !important">
+            </div>
+            <div id="section-contact" class="page-section section-form pt-4" style="padding-bottom: 20px !important">
 
-                
+
 
                 <div class=" clearfix">
-                    <h2 class="text-center mx-md-auto mx-2 bottommargin font-body title-section "
+                  <div class="container">
+                    <h2 class="text-center mx-md-auto mx-2 mt-3 bottommargin font-body title-section "
                         style="max-width: 700px; font-size: 40px;">
                         Tertarik Untuk Bergabung & Berdiskusi Dengan
                         <span class="red-part">Account Executive</span> Kami?
                     </h2>
                     <div class="mx-auto topmargin" style="">
                         <div class="row">
-                            <div class="col-md-6 ">
-                                <div class="form-widget ">
+                            <div class="col-md-6 order-md-1 order-2">
+
 
                                     <div class="form-result"></div>
 
-                                    <form class="row mb-0" id="template-contactform" name="template-contactform"
-                                        action="include/form.php" method="post">
+                                    <form class="row mb-0 meeting-form" id="template-contactform" name="template-contactform"
+                                        action="{{route('postMeeting')}}" method="post">
+                                        @csrf
 
-                                        <div class="form-process">
-                                            <div class="css3-spinner">
-                                                <div class="css3-spinner-scale-ripple">
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                </div>
-                                            </div>
-                                        </div>
 
                                         <div class="col-md-12 mb-4">
                                             <input type="text" id="template-contactform-name"
-                                                name="template-contactform-name" value=""
-                                                class="sm-form-control border-form-control required" placeholder="Name" />
+                                                name="name"
+                                                class="sm-form-control border-form-control required" placeholder="Name" value="{{old('name')}}" />
+                                            <div style="color: red; font-size:11px" id="err-name">
+
+                                            </div>
                                         </div>
                                         <div class="col-md-12 mb-4">
                                             <input type="email" id="template-contactform-email"
-                                                name="template-contactform-email" value=""
+                                                name="email"
                                                 class="required email sm-form-control border-form-control"
-                                                placeholder="Email Address" />
+                                                placeholder="Email Address" value="{{old('email')}}"/>
+                                            <div style="color: red; font-size:11px" id="err-email">
+
+                                            </div>
                                         </div>
 
                                         <div class="w-100"></div>
 
                                         <div class="col-md-12 mb-4">
                                             <input type="text" id="template-contactform-phone"
-                                                name="template-contactform-phone" value=""
+                                                name="phone" value="{{old('phone')}}"
                                                 class="sm-form-control border-form-control" placeholder="Phone" />
+                                            <div style="color: red; font-size:11px" id="err-phone">
+
+                                            </div>
                                         </div>
 
                                         <div class="col-md-12 mb-4">
-                                            <input type="text" id="template-contactform-subject" name="company" value=""
+                                            <input type="text" id="company" name="company" value="{{old('company')}}"
                                                 class="required sm-form-control border-form-control"
                                                 placeholder="Company Name" />
+                                            <div style="color: red; font-size:11px" id="err-company">
+
+                                            </div>
                                         </div>
 
                                         <div class="w-100"></div>
 
                                         <div class="col-md-12 mb-4">
-                                            <input type="date" id="template-contactform-subject" name="date" value=""
+                                            <input type="date" id="" name="date" value="{{old('date')}}"
                                                 class="required sm-form-control border-form-control"
                                                 placeholder="Tanggal Bertemu" />
+                                            <div style="color: red; font-size:11px" id="err-date">
+
+                                            </div>
                                         </div>
                                         <div class="col-md-12 mb-4">
-                                            <input type="time" id="template-contactform-subject" name="time" value=""
+                                            <input type="time" id="template-contactform-subject" name="time" value="{{old('time')}}"
                                                 class="required sm-form-control border-form-control"
                                                 placeholder="jam Bertemu" />
-                                        </div>
+                                            <div style="color: red; font-size:11px" id="err-time">
 
+                                            </div>
+                                        </div>
+                                        <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
                                         <div class="col-12 center mb-4">
-                                            <button class="button button-border button-circle fw-medium ms-0 topmargin-sm"
-                                                type="submit" id="template-contactform-submit"
+                                            <button class="button button-border btn-sub button-circle fw-medium ms-0 topmargin-sm"
+                                                type="submit" id="template-contactform-submit" disabled
                                                 name="template-contactform-submit" value="submit">Join Now</button>
                                             <br>
                                             <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our
                                                 best to
-                                                get back to you within 6-8 working hours.</small>
+                                                get back to you within 2-3 working days.</small>
                                         </div>
 
                                         <div class="w-100"></div>
@@ -777,16 +851,18 @@
 
                                     </form>
 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form d-md-block d-none">
 
+                            </div>
+                            <div class="col-md-6 order-md-2 order-1  mb-md-4 mb-4">
+
+                                <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" class="img-form" frameborder="0" scrolling="no"></iframe>
                             </div>
                         </div>
 
 
                     </div>
+
+                  </div>
 
                 </div>
                 <div class="row mx-0 topmargin-lg align-items-stretch">
@@ -821,5 +897,202 @@
 @endsection
 
 @section('js')
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+   <script>
+    $('.btn-join').on('click', function(){
+      $('html, body').animate({
+                scrollTop: ($(".section-form").offset().top) - 160
+      }, 1500);
+    })
+    $('.btn-client').on('click', function(){
+      $('html, body').animate({
+                scrollTop: ($(".section-client").offset().top) - 160
+      }, 1500);
+    })
+   </script>
+   <script type="text/javascript">
+   $('.meeting-form').on('submit', function(e){
+
+          let errorEmail = false;
+          let errorName = false;
+          let errorPhone = false;
+          let errorCompany = false;
+          let errorDate = false;
+          let errorTime = false;
+
+          let email = $('input[name="email"]').val() ?? "";
+          let name = $('input[name="name"]').val() ;
+          let phone = $('input[name="phone"]').val();
+          let company = $('input[name="company"]').val();
+          let date = $('input[name="date"]').val();
+          let time = $('input[name="time"]').val();
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+          if (!email.match(mailformat) ) {
+            console.log("wrong email");
+            errorEmail = true;
+            $('#err-email').text('Email Tidak Valid');
+
+          }else{
+            $('#err-email').text('');
+          }
+
+          if (name.length < 2) {
+            console.log("name empty");
+            errorName = true;
+            $('#err-name').text('Nama tidak valid');
+          }else{
+            $('#err-name').text('');
+          }
+          if (phone.length < 9 ) {
+            console.log("phone error");
+            errorPhone = true;
+            $('#err-phone').text('Nomor Kamu Tidak Valid');
+          }else{
+            $('#err-phone').text('');
+          }
+
+          if (company.length< 3) {
+            console.log("company error");
+            errorCompany = true;
+            $('#err-company').text('Nama Perusahaan Tidak Valid');
+          }else{
+            $('#err-company').text('');
+          }
+
+          if (date.length< 5) {
+            console.log("date empty");
+            errorDate = true;
+            $('#err-date').text('Tanggal Bertemu Tidak valid');
+          }else{
+            $('#err-date').text('');
+          }
+
+          if (time.length< 4) {
+            console.log("Time empty");
+            errorTime = true;
+            $('#err-time').text('Waktu Bertemu Tidak Valid');
+          }else{
+            $('#err-time').text('');
+          }
+
+
+          if(errorName || errorEmail || errorPhone ||errorCompany || errorDate || errorTime){
+            console.log("ONE OF THEM IS EMPTY/WRONG");
+            e.preventDefault();
+          }
+        })
+
+    </script>
+    <script type="text/javascript">
+        function recaptchaCallback(){
+            $('.btn-sub').removeAttr('disabled');
+        }
+    </script>
+    @if (Session::has('successMsg'))
+      <script>
+          console.log('success');
+          Swal.fire(
+              'Success!',
+              'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
+              'success'
+          );
+      </script>
+      <script type="text/javascript">
+
+        $(function(){
+          console.log("Begin");
+
+          $.ajax({
+              type: "GET",
+              url: "{{ route('getFutureEvent') }}",
+
+              success: function(result) {
+                  console.log("Success");
+                  // alert("Success");
+              },
+              error: function(xhr) {
+                  //Do Something to handle error
+                  console.log(xhr.responseText);
+
+
+              }
+          });
+        });
+      </script>
+  @endif
+
+  @if (Session::has('fullBooked'))
+      <script>
+
+          Swal.fire(
+              'Gagal',
+              'Jadwal sudah penuh pada hari tersebut! Silahkan pilih hari dan jam lain!',
+              'error'
+          );
+      </script>
+  @endif
+  @if (Session::has('errorBeforeDate'))
+      <script>
+
+          Swal.fire(
+              'Gagal',
+              'Kamu tidak bisa memilih jadwal diskusi sebelum hari ini!',
+              'error'
+          );
+      </script>
+  @endif
+  @if (Session::has('holidayError'))
+      <script>
+
+          Swal.fire(
+              'Gagal',
+              'Account Executive tidak menerima jadwal diskusi pada hari Sabtu dan Minggu.',
+              'error'
+          );
+      </script>
+  @endif
+  @if (Session::has('fullBookedjam'))
+      <script>
+
+          Swal.fire(
+              'Gagal',
+              'Jadwal sudah terisi pada jam tersebut! Silahkan pilih jam lain!',
+              'error'
+          );
+      </script>
+  @endif
+  @if (Session::has('errorCapcha'))
+      <script>
+
+          Swal.fire(
+              'Gagal',
+              'Capcha kamu kosong!',
+              'error'
+          );
+      </script>
+  @endif
 @endsection

@@ -3,8 +3,11 @@
 
 <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Yokesen" />
+  <meta name="description" content="Kagumi hadir untuk membantu membangun komunitas bagi brand melalui digital activation." />
+  <meta name="keywords" content="digital activation and gamification, brand community marketing, digital technology integration, content creator management" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Mediakagumi.com" />
+  <meta name="google-site-verification" content="oQk4soQuvFJqEjTkl6S6xFgrd-MYazzr1S_eapX8ikE" />
 
     <!-- Stylesheets
  ============================================= -->
@@ -26,12 +29,13 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/template/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.0.0" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.0.8" type="text/css" />
+    @yield('css')
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Document Title
  ============================================= -->
-    <title>Media Kagumi </title>
+    <title>Media Kagumi | Digital Activation and Gamification | Brand Community Marketing</title>
 
     <style>
         .font-secondary {
@@ -495,9 +499,9 @@
             } else {
                 y = 1
             }
-            let wa = [6281388886435, 6281313002582]
+            let wa = [6281388886435, 6281388886435]
             window.open(
-                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20servis%20di%20Yokesen`
+                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20servis%20di%20Kagumi`
             )
         })
     </script>
