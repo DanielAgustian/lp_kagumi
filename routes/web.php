@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\DetailLeadController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +35,12 @@ Route::get('/get-future-event', [CalendarController::class, 'getFutureEvent'])->
 // POST PROCESS
 
 Route::post('/post-meeting', [PostController::class, 'createMeeting'])->name('postMeeting');
+
+
+// Crudbooster Linkedin
+// CRUDBOOSTER CUSTOM VIEW
+Route::get('admin/detail-lead/{id}', [DetailLeadController::class, 'detailLeadsPage'])->name('detailLeadsPage');
+Route::post('admin/change-status/{id}',[DetailLeadController::class, 'changeStatus'])->name('changeStatusLead');
+Route::post('admin/update-lead-data/{id}', [DetailLeadController::class, 'updateDetail'])->name('updateDataLead');
+Route::post('admin/save-activity', [DetailLeadController::class, 'saveFollowUp'])->name('saveFollowUp');
+Route::post('admin/change-assign-to', [DetailLeadController::class, 'assignLeads'])->name('assignLeads');

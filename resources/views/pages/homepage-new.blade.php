@@ -795,7 +795,7 @@
 
                                         <div class="col-md-12 mb-4">
                                             <input type="text" id="template-contactform-phone"
-                                                name="phone" value="{{old('phone')}}"
+                                                name="whatsapp" value="{{old('phone')}}"
                                                 class="sm-form-control border-form-control" placeholder="Phone" />
                                             <div style="color: red; font-size:11px" id="err-phone">
 
@@ -810,25 +810,15 @@
 
                                             </div>
                                         </div>
+                                        <div class="col-md-12 mb-4">
+                                            <textarea name="message" rows="3" cols="5" class="required sm-form-control border-form-control" placeholder="Alamat" style="height:auto !important">{{old('alamat')}}</textarea>
+                                            <div style="color: red; font-size:11px" id="err-message">
 
+                                            </div>
+                                        </div>
                                         <div class="w-100"></div>
 
-                                        <div class="col-md-12 mb-4">
-                                            <input type="date" id="" name="date" value="{{old('date')}}"
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="Tanggal Bertemu" />
-                                            <div style="color: red; font-size:11px" id="err-date">
 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mb-4">
-                                            <input type="time" id="template-contactform-subject" name="time" value="{{old('time')}}"
-                                                class="required sm-form-control border-form-control"
-                                                placeholder="jam Bertemu" />
-                                            <div style="color: red; font-size:11px" id="err-time">
-
-                                            </div>
-                                        </div>
                                         <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
                                         <div class="col-12 center mb-4">
                                             <button class="button button-border btn-sub button-circle fw-medium ms-0 topmargin-sm"
@@ -854,8 +844,8 @@
 
                             </div>
                             <div class="col-md-6 order-md-2 order-1  mb-md-4 mb-4">
-
-                                <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" class="img-form" frameborder="0" scrolling="no"></iframe>
+                                <img src="{{asset('images/red_write_1.png')}}" alt="" class="w-100 h-100 rounded  " style="object-fit:cover">
+                                <!-- <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" class="img-form" frameborder="0" scrolling="no"></iframe> -->
                             </div>
                         </div>
 
@@ -940,15 +930,14 @@
           let errorName = false;
           let errorPhone = false;
           let errorCompany = false;
-          let errorDate = false;
-          let errorTime = false;
+          let errorMessage = false;
 
           let email = $('input[name="email"]').val() ?? "";
           let name = $('input[name="name"]').val() ;
           let phone = $('input[name="phone"]').val();
           let company = $('input[name="company"]').val();
-          let date = $('input[name="date"]').val();
-          let time = $('input[name="time"]').val();
+          let message = $('textarea[name="message"]').val();
+
           var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
           if (!email.match(mailformat) ) {
@@ -983,24 +972,18 @@
             $('#err-company').text('');
           }
 
-          if (date.length< 5) {
-            console.log("date empty");
-            errorDate = true;
-            $('#err-date').text('Tanggal Bertemu Tidak valid');
+          if (message.length< 3) {
+              console.log('message error');
+              errorMessage = true;
+                $('#err-message').text('Pesan terlalu pendek!');
           }else{
-            $('#err-date').text('');
-          }
+              $('#err-message').text('');
 
-          if (time.length< 4) {
-            console.log("Time empty");
-            errorTime = true;
-            $('#err-time').text('Waktu Bertemu Tidak Valid');
-          }else{
-            $('#err-time').text('');
           }
 
 
-          if(errorName || errorEmail || errorPhone ||errorCompany || errorDate || errorTime){
+
+          if(errorName || errorEmail || errorPhone ||errorCompany || errorMessage){
             console.log("ONE OF THEM IS EMPTY/WRONG");
             e.preventDefault();
           }

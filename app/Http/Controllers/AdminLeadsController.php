@@ -132,7 +132,7 @@
 				*/
 				$this->addaction = array();
 				$this->addaction[] = [
-					'title' => 'Detail', 'url' => ('https://mediakagumi.com/admin/leads/detail/[id]'),
+					'title' => 'Detail', 'url' => ('https://mediakagumi.com/admin/detail-lead/[id]'),
 					'icon' => 'fa fa-eye', 'color' => 'primary'
 				];
 
