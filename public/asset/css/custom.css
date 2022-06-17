@@ -282,7 +282,12 @@ section {
     .layanan.card{
         margin-bottom: 15px;
     }
-
+    .emphasis-title h2{
+        font-size: 40px;
+    }
+    .details-banner{
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -409,7 +414,7 @@ span.red-part{
         border-radius: 10px;
     }
     .emphasis-title h1, .emphasis-title h2{
-        font-size: 39px !important;
+        font-size: 37px !important;
     }
     .details-banner{
         font-size: 16px;

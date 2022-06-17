@@ -16,13 +16,14 @@ use App\Http\Controllers\DetailLeadController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-//Route::get('/induk-produk', [ProductController::class, 'indukProduk'])->name('indukProduk');
+
 
 // Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
 Route::get('/', [LandingController::class, 'homepageNew'])->name('homepageNew');
+Route::get('/contact-us', [LandingController::class, 'contactUs'])->name('contactUs');
+
+
+// Landing Page
 Route::get('/digital-activation-gamification', [LandingController::class, 'landing'])->name('landingPage');
 
 
@@ -35,6 +36,7 @@ Route::get('/get-future-event', [CalendarController::class, 'getFutureEvent'])->
 // POST PROCESS
 
 Route::post('/post-meeting', [PostController::class, 'createMeeting'])->name('postMeeting');
+Route::post('/post-contact-us', [PostController::class, 'makeContactUs'])->name('makeContactUs');
 
 
 // Crudbooster Linkedin

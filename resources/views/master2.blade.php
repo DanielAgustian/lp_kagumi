@@ -319,7 +319,7 @@
                                 data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link" data-href="#section-about">
+                                    <a href="" class="menu-link" >
                                         <div>About</div>
                                     </a>
                                 </li>
@@ -330,7 +330,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link" data-href="#section-services">
+                                    <a href="#" class="menu-link">
                                         <div>Our Client</div>
                                     </a>
                                 </li>
@@ -340,7 +340,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link" data-href="#section-contact">
+                                    <a href="{{route('contactUs')}}" class="menu-link" >
                                         <div>Contact Us</div>
                                     </a>
                                 </li>
@@ -379,16 +379,11 @@
                                 <h4>Site Links</h4>
 
                                 <ul class="list-unstyled footer-site-links mb-0">
-                                    <li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo"
-                                            data-speed="1250" data-offset="70">About Us</a></li>
-                                    <li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo"
-                                            data-speed="1250" data-offset="70">Services</a></li>
-                                    <li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo"
-                                            data-speed="1250" data-offset="70">Our Client</a></li>
-                                    <li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo"
-                                            data-speed="1250" data-offset="70">Blog</a></li>
-                                    <li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo"
-                                            data-speed="1250" data-offset="70">Contact Us</a></li>
+                                    <li><a href="#" >About Us</a></li>
+                                    <li><a href="#" >Services</a></li>
+                                    <li><a href="#">Our Client</a></li>
+                                    <li><a href="#" >Blog</a></li>
+                                    <li><a href="#" >Contact Us</a></li>
                                 </ul>
                             </div>
 

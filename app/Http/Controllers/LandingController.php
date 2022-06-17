@@ -16,4 +16,8 @@ class LandingController extends Controller
     public function landing(){
         return view('pages.landing');
     }
+
+    public function contactUs(){
+        return view('pages.contact-us');
+    }
 }
