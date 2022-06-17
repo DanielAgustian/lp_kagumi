@@ -912,7 +912,7 @@ $('.meeting-form').on('submit', function(e){
          $('.btn-sub').removeAttr('disabled');
      }
  </script>
- @if (Session::has('successMsg'))
+ {{-- @if (Session::has('successMsg'))
    <script>
        console.log('success');
        Swal.fire(
@@ -943,7 +943,7 @@ $('.meeting-form').on('submit', function(e){
        });
      });
    </script>
-@endif
+@endif --}}
 
 @if (Session::has('fullBooked'))
    <script>

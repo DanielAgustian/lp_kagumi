@@ -1011,37 +1011,7 @@
             $('.btn-sub').removeAttr('disabled');
         }
     </script>
-    @if (Session::has('successMsg'))
-        <script>
-            console.log('success');
-            Swal.fire(
-                'Success!',
-                'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
-                'success'
-            );
-        </script>
-        <script type="text/javascript">
-            $(function() {
-                console.log("Begin");
-
-                $.ajax({
-                    type: "GET",
-                    url: "{{ route('getFutureEvent') }}",
-
-                    success: function(result) {
-                        console.log("Success");
-                        // alert("Success");
-                    },
-                    error: function(xhr) {
-                        //Do Something to handle error
-                        console.log(xhr.responseText);
-
-
-                    }
-                });
-            });
-        </script>
-    @endif
+    
 
     @if (Session::has('fullBooked'))
         <script>
