@@ -105,7 +105,7 @@ class PostController extends Controller
         'created_at'=> Carbon::now()
 
       ]);
-      return redirect()->back()->with('successContact', 'Success');
+      return redirect()->back()->with('successMsg', 'Success');
   }
 
 }
