@@ -385,6 +385,11 @@ span.red-part{
      color: white;
      font-size: 38px;
  }
+
+ .menu-item.active > .menu-link{
+    color: #de1d37 !important;
+    font-weight: 700 !important;
+ }
 @media screen and (max-width: 996px) {
   .img-testi-new{
     width: 150px !important;

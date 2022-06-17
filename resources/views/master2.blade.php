@@ -3,11 +3,13 @@
 
 <head>
 
-  <meta name="description" content="Kagumi hadir untuk membantu membangun komunitas bagi brand melalui digital activation." />
-  <meta name="keywords" content="digital activation and gamification, brand community marketing, digital technology integration, content creator management" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Mediakagumi.com" />
-  <meta name="google-site-verification" content="oQk4soQuvFJqEjTkl6S6xFgrd-MYazzr1S_eapX8ikE" />
+    <meta name="description"
+        content="Kagumi hadir untuk membantu membangun komunitas bagi brand melalui digital activation." />
+    <meta name="keywords"
+        content="digital activation and gamification, brand community marketing, digital technology integration, content creator management" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Mediakagumi.com" />
+    <meta name="google-site-verification" content="oQk4soQuvFJqEjTkl6S6xFgrd-MYazzr1S_eapX8ikE" />
 
     <!-- Stylesheets
  ============================================= -->
@@ -29,7 +31,7 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/template/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.0.8" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.0.9" type="text/css" />
     @yield('css')
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -182,7 +184,6 @@
             right: 40px;
             left: auto;
         }
-
     </style>
 
 </head>
@@ -319,7 +320,7 @@
                                 data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
                                 <li class="menu-item">
-                                    <a href="" class="menu-link" >
+                                    <a href="" class="menu-link">
                                         <div>About</div>
                                     </a>
                                 </li>
@@ -339,8 +340,8 @@
                                         <div>Blog</div>
                                     </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a href="{{route('contactUs')}}" class="menu-link" >
+                                <li class="menu-item {{ set_active_bar('contactUs') }}">
+                                    <a href="{{ route('contactUs') }}" class="menu-link">
                                         <div>Contact Us</div>
                                     </a>
                                 </li>
@@ -379,11 +380,11 @@
                                 <h4>Site Links</h4>
 
                                 <ul class="list-unstyled footer-site-links mb-0">
-                                    <li><a href="#" >About Us</a></li>
-                                    <li><a href="#" >Services</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
                                     <li><a href="#">Our Client</a></li>
-                                    <li><a href="#" >Blog</a></li>
-                                    <li><a href="#" >Contact Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
 

@@ -14,7 +14,20 @@ function set_none_navbar($uri, $output = ' d-none')
    }
  }
 }
-
+function set_active_bar($uri, $output = ' active')
+{
+ if( is_array($uri) ) {
+   foreach ($uri as $u) {
+     if (Route::is($u)) {
+       return $output;
+     }
+   }
+ } else {
+   if (Route::is($uri)){
+     return $output;
+   }
+ }
+}
 function replaceNumber($whatsapp){
 
     $whatsapp = str_replace('-','',$whatsapp);
