@@ -1,7 +1,7 @@
 @extends('master2')
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}?v=1.0.0">
 @endsection
 @section('banner')
     <section id="slider" class="slider-element bgchanger include-header mb-0 "
@@ -207,7 +207,7 @@
                     <iframe class="h-100 map-contact-us"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2661524317405!2d106.64887841476916!3d-6.228599195491247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb588b4591bf%3A0x94e2c809ac22a79e!2sMedia%20Kagumi%20From%20Yokesen!5e0!3m2!1sen!2sid!4v1643271485111!5m2!1sen!2sid"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="container position-relative">
+                    <div class="container position-relative container-contact-us" >
                         
                         <div class="row justify-content-center">
                             <div class="col-lg-7 col-md-10 col-12">

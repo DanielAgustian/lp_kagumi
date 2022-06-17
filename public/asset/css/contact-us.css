@@ -26,6 +26,14 @@
 .address-box *{
     color: #F5EDED;
 }
+
+.container-contact-us{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255,255,255,.85), rgba(255,255,255,255.5)), url('../../images/logo-kagumi.png');
+   
+}
 @media screen and (max-width: 996px) {
     .slider-element{
         min-height: 40vh !important;
