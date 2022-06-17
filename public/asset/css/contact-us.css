@@ -26,6 +26,12 @@
 .address-box *{
     color: #F5EDED;
 }
+@media screen and (max-width: 996px) {
+    .slider-element{
+        min-height: 40vh !important;
+    }
+   
+}
 
 @media screen and (max-width: 450px) {
     .map-contact-us{

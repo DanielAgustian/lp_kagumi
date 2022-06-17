@@ -15,11 +15,7 @@
                             Contact Us
                         </h2>
                     </div>
-                    <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu
-                        membangun
-                        komunitas yang loyal bagi brand melalui Digital
-                        Activation dan mengubahnya menjadi aset yang
-                        berharga</span>
+                    <span class=" mt-3 d-block details-banner" style="color: white">Bingung tentang apa sih itu <strong>Kagumi</strong>? Tertarik dengan pelayanan <strong>Kagumi</strong> tapi ingin bertanya dulu supaya jelas? Yuk hubungi kami!
 
 
                 </div>
