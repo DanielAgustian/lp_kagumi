@@ -80,8 +80,8 @@ class PostController extends Controller
       $data = [
           'name' => $request->name,
           'email' => $request->email,
-          'phone' => '62'.$request->phone,
-          'whatsapp' => '62'.$request->phone,
+          'phone' => '62'.$request->whatsapp,
+          'whatsapp' => '62'.$request->whatsapp,
           'status' => 'lead',
           'company'=> $request->company,
           'parent' => 2,
