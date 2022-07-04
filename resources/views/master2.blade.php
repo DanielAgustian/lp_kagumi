@@ -320,7 +320,7 @@
                                 data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
                                 <li class="menu-item">
-                                    <a href="" class="menu-link">
+                                    <a href="#" class="menu-link">
                                         <div>About</div>
                                     </a>
                                 </li>
@@ -331,15 +331,15 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="#" class="menu-link" data-href="#section-client">
                                         <div>Our Client</div>
                                     </a>
                                 </li>
-                                <li class="menu-item">
+                                <!-- <li class="menu-item">
                                     <a href="#" class="menu-link" data-href="#section-blog">
                                         <div>Blog</div>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="menu-item {{ set_active_bar('contactUs') }}">
                                     <a href="{{ route('contactUs') }}" class="menu-link">
                                         <div>Contact Us</div>
@@ -384,7 +384,7 @@
                                     <li><a href="#">Services</a></li>
                                     <li><a href="#">Our Client</a></li>
                                     <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
                                 </ul>
                             </div>
 
@@ -468,7 +468,7 @@
     <!-- Footer Scripts
  ============================================= -->
     <script src="{{ asset('asset/js/template/functions.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
     <script>
         jQuery(window).on('pluginCarouselReady', function() {
             var owlWatch = $('#oc-watch'),
@@ -510,27 +510,7 @@
                 'success'
             );
         </script>
-        <script type="text/javascript">
-            $(function() {
-                console.log("Begin");
 
-                $.ajax({
-                    type: "GET",
-                    url: "{{ route('getFutureEvent') }}",
-
-                    success: function(result) {
-                        console.log("Success");
-                        // alert("Success");
-                    },
-                    error: function(xhr) {
-                        //Do Something to handle error
-                        console.log(xhr.responseText);
-
-
-                    }
-                });
-            });
-        </script>
     @endif
     @yield('js')
 </body>
