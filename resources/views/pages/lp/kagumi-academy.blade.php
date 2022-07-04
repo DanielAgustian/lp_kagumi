@@ -119,7 +119,7 @@
                         style="background: url('{{ asset('images/group.png') }}') center center no-repeat; background-size: cover;">
 
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" data-animate="fadeInRight"  data-duration="750">
                         <div class="inner-padding"></div>
                         @component('components.custom.itm-kom')
                             @slot('side')
@@ -218,8 +218,8 @@
                         </h2>
                     </div>
 
-                    <div class="row justify-content-between no-gutters">
-                        <div class="col-lg-3">
+                    <div class="row justify-content-between no-gutters" data-animate="fadeInDown" data-delay="50" data-duration="500">
+                        <div class="col-lg-3 " >
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
@@ -256,7 +256,7 @@
 
 
                     </div>
-                    <div class="row justify-content-around no-gutters">
+                    <div class="row justify-content-around no-gutters" data-animate="fadeInUp" data-delay="50" data-duration="500">
                         <div class="col-lg-2 d-lg-flex d-none"></div>
                         <div class="col-lg-3">
                             <div class="card card-layanan-kagumi">
@@ -298,7 +298,7 @@
                         </h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3"  data-animate="fadeInDown" data-delay="100">
                             <div class="card card-harga-academy">
                                 <div class="card-title">
                                     <h3 class="title">Stage 1 <br>Basic Course</h3>
@@ -319,7 +319,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3" data-animate="fadeInUp" data-delay="150">
                             <div class="card card-harga-academy">
                                 <div class="card-title">
                                     <h3 class="title">Stage 2 <br>Intermediate Course</h3>
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-3" data-animate="fadeInDown" data-delay="200">
                             <div class="card card-harga-academy">
                                 <div class="card-title">
                                     <h3 class="title">Stage 3: <br>Advanced Course</h3>
