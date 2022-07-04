@@ -38,7 +38,7 @@
                                         class="button button-circle btn-white-alt button-light btn-client  button-large text-white mt-md-4 mt-3 nott ls0">Our
                                         Client</a> --}}
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-white-alt button-light btn-client button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Benefit</a>
+                                        class="button button-circle btn-white-alt button-light btn-benefit button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Benefit</a>
                                 </div>
 
                             </div>
@@ -450,12 +450,12 @@
     <script>
         $('.btn-join').on('click', function() {
             $('html, body').animate({
-                scrollTop: ($(".section-form").offset().top) - 160
+                scrollTop: ($(".section-form").offset().top) - 50
             }, 1500);
         })
-        $('.btn-client').on('click', function() {
+        $('.btn-benefit').on('click', function() {
             $('html, body').animate({
-                scrollTop: ($(".section-client").offset().top) - 160
+                scrollTop: ($("#section-benefit").offset().top) - 50
             }, 1500);
         })
     </script>
