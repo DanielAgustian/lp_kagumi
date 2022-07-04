@@ -1,0 +1,82 @@
+.card-layanan-kagumi.card{
+    border: 0;
+    background-color: white;
+    transition: all 0.75s;
+    border-radius: 50%;
+}
+.card-layanan-kagumi.card .card-body{
+    padding: 2rem;
+}
+.card-layanan-kagumi.card:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+}
+.card-layanan-kagumi.card .title{
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.card-layanan-kagumi.card:hover .title{
+    color: rgb(222, 29, 56);
+    font-weight: 800;
+}
+
+.card-layanan-kagumi.card img{
+    max-height: 120px;
+    object-fit: contain;
+}
+.card-harga-academy.card{
+    border-radius: 20px;
+    height: 100%;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.card-harga-academy .card-title{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(222, 29, 56);
+    padding: 5px 10px;
+}
+
+.card-harga-academy .card-title .title{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-harga-academy .card-body{
+    padding-top: 0.3rem;
+}
+
+.card-harga-academy .lil-title{
+    font-weight: 600;
+
+}
+
+.text-primary-title{
+    color: rgb(199, 12, 37)
+}
+.img-register{
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+
+}
+.btn-bordered-white{
+    border: 1px solid rgb(199, 12, 37);
+}
+.btn-large{
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.btn-red{
+    background-color: rgb(199, 12, 37);
+    color: white;
+    font-weight: 600;
+}

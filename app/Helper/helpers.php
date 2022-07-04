@@ -1,7 +1,10 @@
 <?php
 
-function set_none_navbar($uri, $output = ' d-none')
+function set_none_navbar($output = ' d-none')
 {
+
+ $uri = ['landingPage', 'kagumiAcademyPage'];
+ 
  if( is_array($uri) ) {
    foreach ($uri as $u) {
      if (Route::is($u)) {
@@ -14,6 +17,7 @@ function set_none_navbar($uri, $output = ' d-none')
    }
  }
 }
+
 function set_active_bar($uri, $output = ' active')
 {
  if( is_array($uri) ) {

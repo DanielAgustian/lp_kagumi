@@ -5,7 +5,7 @@
         </div>
         <div class="col-sm-9 my-auto h-100">
             <div class="item-kom shadow-desktop">
-               <h4 class="mb-0 my-title">{{ $title }}</h4> 
+               <h5 class="mb-0 my-title">{{ $title }}</h5> 
             </div>
 
         </div>
@@ -15,7 +15,7 @@
     <div class="row mb-3 mx-md-3 mx-4 shadow-mobile rounded">
         <div class="col-sm-9 my-auto order-sm-1 order-2 h-100">
             <div class="item-kom shadow-desktop">
-                <h4 class="mb-0 my-title">{{ $title }}</h4> 
+                <h5 class="mb-0 my-title">{{ $title }}</h5> 
             </div>
 
         </div>

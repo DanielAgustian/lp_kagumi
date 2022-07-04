@@ -20,4 +20,8 @@ class LandingController extends Controller
     public function contactUs(){
         return view('pages.contact-us');
     }
+
+    public function kagumiAcademyPage(){
+        return view('pages.lp.kagumi-academy');
+    }
 }

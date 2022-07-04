@@ -25,6 +25,7 @@ Route::get('/contact-us', [LandingController::class, 'contactUs'])->name('contac
 
 // Landing Page
 Route::get('/digital-activation-gamification', [LandingController::class, 'landing'])->name('landingPage');
+Route::get('/kagumi-academy', [LandingController::class, 'kagumiAcademyPage'])->name('kagumiAcademyPage');
 
 
 
