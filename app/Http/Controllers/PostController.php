@@ -69,7 +69,7 @@ class PostController extends Controller
       //dd($request->all());
       date_default_timezone_set("Asia/Bangkok");
       $agent = new Agent();
-
+      // dd($request->all());
       if ($agent->isPhone()) {
           $screen = "Phone";
       } elseif ($agent->isTablet()) {

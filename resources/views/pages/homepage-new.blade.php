@@ -26,11 +26,8 @@
                                     Mengapa Brand Anda Perlu
                                     Bergabung Dengan Kagumi?
                                 </h2>
-                                <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu
-                                    membangun
-                                    komunitas yang loyal bagi brand melalui Digital
-                                    Activation dan mengubahnya menjadi aset yang
-                                    berharga</span>
+                                <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu serta membangun sebuah brand melalui komunitas yang loyal dengan Digital Activation sehingga dapat
+                                  mencapai <i>Key Performance Indicator</i> (KPI) yang ditargetkan. </span>
                                 <div class="d-flex justify-content-lg-start justify-content-center">
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
                                         class="button button-circle btn-gold button-light btn-join button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
@@ -39,7 +36,7 @@
                                         class="button button-circle btn-white-alt button-light btn-client  button-large text-white mt-md-4 mt-3 nott ls0">Our
                                         Client</a> --}}
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
-                                        class="button button-circle btn-white-alt button-light btn-client button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Our 
+                                        class="button button-circle btn-white-alt button-light btn-client button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Our
                                         Client</a>
                                 </div>
 
@@ -104,16 +101,14 @@
     <section id="content">
         <div class="content-wrap py-0">
 
-            <div id="section-about" class="center page-section">
+            <div id="section-services" class="center page-section">
 
                 <div class="container clearfix">
 
                     <h2 class="mx-auto font-body title-section " style="max-width: 700px; font-size: 40px;">
                         Layanan Apa Saja Yang Disediakan oleh Kagumi?</h2>
 
-                    <p class="lead mx-auto bottommargin" style="">Kami bekerjasama dengan client untuk membantu anda
-                        mengembangkan bisnis yang anda miliki
-                        ke segala penjuru dan membangun komunitas brand dengan kegiatan-kegiatan digital.</p>
+                    <p class="lead mx-auto bottommargin" style="">Kami bekerjasama dengan client untuk membantu dalam mengembangkan, menyebarluaskan, dan membangun sebuah brand melalui sebuah komunitas dengan kegiatan-kegiatan yang dilakukan secara digital.</p>
 
                     {{-- <p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services"
                             data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more
@@ -617,7 +612,7 @@
 
 
             </div>
-            <section class="section-client">
+            <section class="section-client" id="section-client">
                 <div class="container">
                     {{-- <h2 class="title-part text-center"> <img src="{{ asset('images/logo-kagumi.png') }}" alt=""
                             class=""> Siapa Saja Klien <span>Kagumi</span>?</h2> --}}
@@ -1011,7 +1006,7 @@
             $('.btn-sub').removeAttr('disabled');
         }
     </script>
-    
+
 
     @if (Session::has('fullBooked'))
         <script>
