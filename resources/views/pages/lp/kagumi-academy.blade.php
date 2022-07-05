@@ -103,9 +103,9 @@
         <div class="content-wrap py-0">
             <div id="section-benefit" class="page-section pt-0">
 
-                <div class="section m-0 bg-white">
+                <div class="section m-0 bg-white ">
                     <div class="container clearfix">
-                        <div class="mx-auto center" style="max-width: 900px;">
+                        <div class="mx-auto center mt-6" style="max-width: 900px;">
                             <h2 class="mb-0 fw-bold ls1">Apa yang bisa kamu dapatkan dari
                                 <strong style="color: #de1d38">Streaming Selling Academy </strong>?
                             </h2>
@@ -209,7 +209,7 @@
             </div>
 
 
-            <section id="section-services" class="section"
+            <section id="section-services" class="section mt-0"
                 style="background: url('{{ asset('images/red-bg-gradient.svg') }}') no-repeat center center / cover; ">
                 <div class="container">
                     <div class="d-flex justify-content-center">
@@ -218,8 +218,8 @@
                         </h2>
                     </div>
 
-                    <div class="row justify-content-between no-gutters" data-animate="fadeInDown" data-delay="50" data-duration="500">
-                        <div class="col-lg-3 " >
+                    <div class="row justify-content-lg-between justify-content-center no-gutters" data-animate="fadeInUp" data-delay="50" data-duration="500">
+                        <div class="col-lg-3 col-md-6 col-6" >
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
@@ -230,7 +230,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
@@ -241,7 +241,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
@@ -258,7 +258,7 @@
                     </div>
                     <div class="row justify-content-around no-gutters" data-animate="fadeInUp" data-delay="50" data-duration="500">
                         <div class="col-lg-2 d-lg-flex d-none"></div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
@@ -270,7 +270,7 @@
 
                         </div>
                         <div class="col-lg-2 d-lg-flex d-none"></div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
                                     <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"

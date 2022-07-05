@@ -80,3 +80,27 @@
     color: white;
     font-weight: 600;
 }
+
+@media screen and (max-width: 996px) {
+    .card-layanan-kagumi.card{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-layanan-kagumi.card .card-body{
+        padding: 1.25rem;
+    }
+    .card-layanan-kagumi.card img{
+        max-height: 95px;
+    }
+    .card-layanan-kagumi.card{
+        margin: 2px;
+    }
+    .card-layanan-kagumi.card .title{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
