@@ -385,7 +385,7 @@
 
                                     <div class="d-flex justify-content-center mt-4">
                                         <a
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSfxn0xEOU9uFq4NKfioy4WYCe48smmALHYLy1KbRa19KTJRqg/viewform ">
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSfxn0xEOU9uFq4NKfioy4WYCe48smmALHYLy1KbRa19KTJRqg/viewform" target="_blank">
                                             <button class="btn-red btn btn-large btn-bordered-white" style="border">Free
                                                 Register</button>
 
