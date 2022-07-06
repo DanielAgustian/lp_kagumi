@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/template/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.0.9" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.1.0" type="text/css" />
     @yield('css')
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 

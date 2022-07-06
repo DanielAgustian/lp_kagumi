@@ -57,26 +57,15 @@
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_content_creator.png') }}?v=1.00.0"
-                                            alt="Watch">
+                                        <img src="{{ asset('images/kagumi-academy/banner-1.png') }}?v=1.00.0"
+                                            alt="streaming">
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_cross_platform_streaming.png') }}?v=1.00.0"
-                                            alt="Watch">
+                                        <img src="{{ asset('images/kagumi-academy/banner-2.png') }}?v=1.00.0"
+                                        alt="opprtunity">
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
-                                            alt="Watch">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_multimedia_specialist.png') }}?v=1.00.0"
-                                            alt="Watch">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_online_event.png') }}?v=1.00.0"
-                                            alt="Watch">
-                                    </div>
+                                   
 
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -103,7 +92,7 @@
         <div class="content-wrap py-0">
             <div id="section-benefit" class="page-section pt-0">
 
-                <div class="section m-0 bg-white ">
+                <div class="mt-0 mx-0 mb-5 bg-white ">
                     <div class="container clearfix">
                         <div class="mx-auto center mt-6" style="max-width: 900px;">
                             <h2 class="mb-0 fw-bold ls1">Apa yang bisa kamu dapatkan dari
@@ -116,17 +105,17 @@
                 <div class="row ">
 
                     <div class="col-lg-5 d-none d-md-block"
-                        style="background: url('{{ asset('images/group.png') }}') center center no-repeat; background-size: cover;">
+                        style="background: url('{{ asset('images/kagumi-academy/livestream.png') }}') center center no-repeat; background-size: contain;">
 
                     </div>
-                    <div class="col-lg-7" data-animate="fadeInRight"  data-duration="750">
+                    <div class="col-lg-7 kagumi-acap" data-animate="fadeInRight"  data-duration="750">
                         <div class="inner-padding"></div>
                         @component('components.custom.itm-kom')
                             @slot('side')
                                 back
                             @endslot
                             @slot('url')
-                                https://heygom.com/wp-content/uploads/2018/07/7-Unique-Ways-to-Increase-Brand-Recognition-in-2018.jpg
+                               {{asset('images/kagumi-academy/get-streamer.png')}}
                             @endslot
                             @slot('title')
                                 Peluang menjadi Streamer Handal tanpa bingung harus menyiapkan materi konten dan peralatan yang
@@ -138,7 +127,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                https://fowmedia.com/wp-content/uploads/2017/04/8-Key-Steps-to-Driving-Employee-Engagement.jpg
+                                {{asset('images/kagumi-academy/get-content.png')}}
                             @endslot
                             @slot('title')
                                 Konten yang dibutuhkan sudah disiapkan mulai dari planning, process, sampai production
@@ -149,7 +138,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                https://komerce.id/blog/wp-content/uploads/2021/06/pengertian-customer.jpg
+                            {{asset('images/kagumi-academy/get-public-speaking.png')}}
                             @endslot
                             @slot('title')
                                 Kagumi akan membantu kamu dalam hal Public Speaking
@@ -160,7 +149,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                https://adcumulus.com/app/uploads/2017/06/brand-reputation-protection.png
+                            {{asset('images/kagumi-academy/get-tools.png')}}
                             @endslot
                             @slot('title')
                                 Peralatan yang lengkap untuk keperluan kamu ngonten
@@ -171,7 +160,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                https://www.edesk.com/wp-content/uploads/2020/06/ecommerce-customer-loyalty.png
+                            {{asset('images/kagumi-academy/get-opt.png')}}
                             @endslot
                             @slot('title')
                                 Konten kamu dibantu optimizing supaya bisa menjangkau para audience
@@ -182,7 +171,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                https://adcumulus.com/app/uploads/2017/06/brand-reputation-protection.png
+                                {{asset('images/kagumi-academy/get-adsense.png')}}
                             @endslot
                             @slot('title')
                                 Dan Kagumi akan membantu dalam hal Adsense atau Monetizing
@@ -222,7 +211,7 @@
                         <div class="col-lg-3 col-md-6 col-6" >
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
-                                    <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                    <img src="{{ asset('images/kagumi-academy/cloud-content-planning.png') }}?v=1.00.0"
                                         alt="Watch" class="w-100">
                                     <h4 class="title">Content Planning</h4>
                                 </div>
@@ -233,7 +222,7 @@
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
-                                    <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                    <img src="{{ asset('images/kagumi-academy/cloud-content-platform.png') }}?v=1.00.0"
                                         alt="Watch" class="w-100">
                                     <h4 class="title">Content Platform Tools</h4>
                                 </div>
@@ -244,7 +233,7 @@
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
-                                    <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                    <img src="{{ asset('images/kagumi-academy/cloud-monetizing.png') }}?v=1.00.0"
                                         alt="Watch" class="w-100">
                                     <h4 class="title">Monetizing
                                     </h4>
@@ -261,7 +250,7 @@
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
-                                    <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                    <img src="{{ asset('images/kagumi-academy/cloud-content-production.png') }}?v=1.00.0"
                                         alt="Watch" class="w-100">
                                     <h4 class="title">Content Production</h4>
                                 </div>
@@ -273,7 +262,7 @@
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="card card-layanan-kagumi">
                                 <div class="card-body">
-                                    <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                    <img src="{{ asset('images/kagumi-academy/cloud-smo.png') }}?v=1.00.0"
                                         alt="Watch" class="w-100">
                                     <h4 class="title">Social Media Optimizing</h4>
                                 </div>
@@ -390,8 +379,8 @@
                         <div class="mx-auto mt-4" style="">
                             <div class="row justify-content-center">
 
-                                <div class="col-lg-7 col-md-8 order-md-2 order-1  mb-md-4 mb-4">
-                                    <img src="{{ asset('images/red_write_1.png') }}" alt=""
+                                <div class="col-lg-10 col-md-11 order-md-2 order-1  mb-md-4 mb-4">
+                                    <img src="{{ asset('images/kagumi-academy/streamer.png') }}" alt="Menjadi Streamer"
                                         class="w-100 img-register " style="">
 
                                     <div class="d-flex justify-content-center mt-4">
