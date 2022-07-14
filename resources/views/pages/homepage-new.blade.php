@@ -26,8 +26,10 @@
                                     Mengapa Brand Anda Perlu
                                     Bergabung Dengan Kagumi?
                                 </h2>
-                                <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu serta membangun sebuah brand melalui komunitas yang loyal dengan Digital Activation sehingga dapat
-                                  mencapai <i>Key Performance Indicator</i> (KPI) yang ditargetkan. </span>
+                                <span class=" mt-3 d-block details-banner" style="color: white">Kagumi hadir untuk membantu
+                                    serta membangun sebuah brand melalui komunitas yang loyal dengan Digital Activation
+                                    sehingga dapat
+                                    mencapai <i>Key Performance Indicator</i> (KPI) yang ditargetkan. </span>
                                 <div class="d-flex justify-content-lg-start justify-content-center">
                                     <a href="#" data-animate="fadeInUp" data-delay="600"
                                         class="button button-circle btn-gold button-light btn-join button-large text-white mt-4 mr-md-3 mr-0 nott ls0">Join
@@ -45,12 +47,12 @@
 
                         <div class=" col-lg-6 col-md-9 mb-lg-0 mb-4 order-lg-2 order-1 ">
                             <!-- <div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false"
-                                    data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
+                                                    data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
 
 
-                                </div>
+                                                </div>
 
-                                {{-- <div id="oc-watch-bg"
+                                                {{-- <div id="oc-watch-bg"
                                 style="background: #E25B45; width: 360px; height: 360px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; border-radius: 50%;">
                             </div> --}} -->
                             <div class="swiper mySwiper">
@@ -108,26 +110,39 @@
                     <h2 class="mx-auto font-body title-section " style="max-width: 700px; font-size: 40px;">
                         Layanan Apa Saja Yang Disediakan oleh Kagumi?</h2>
 
-                    <p class="lead mx-auto bottommargin" style="">Kami bekerjasama dengan client untuk membantu dalam mengembangkan, menyebarluaskan, dan membangun sebuah brand melalui sebuah komunitas dengan kegiatan-kegiatan yang dilakukan secara digital.</p>
+                    <p class="lead mx-auto bottommargin" style="">Kami bekerjasama dengan client untuk membantu dalam
+                        mengembangkan, menyebarluaskan, dan membangun sebuah brand melalui sebuah komunitas dengan
+                        kegiatan-kegiatan yang dilakukan secara digital.
+                    </p>
 
                     {{-- <p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services"
                             data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more
                             <i class="icon-angle-right"></i></a></p> --}}
 
                     <div class="clear"></div>
-                    <div class="row justify-content-center wow fadeInLeft" data-wow-duration="0.9s">
-                        @component('components.custom.layanan-card')
+                    <div class="row justify-content-center  wow fadeInLeft" data-wow-duration="0.9s">
+                        @component('components.custom.layanan-card-homepage')
+                            @slot('order')
+                                order-1
+                            @endslot
                             @slot('color')
                                 white
                             @endslot
                             @slot('url')
-                                {{ asset('images/banner/kagumi_online_event.png') }}?v=1.00.0
+                                {{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0
+                               
                             @endslot
                             @slot('title')
-                                Online Event
+                                Digital Activation
+                            @endslot
+                            @slot('id')
+                                1
                             @endslot
                         @endcomponent
-                        @component('components.custom.layanan-card')
+                        @component('components.custom.layanan-card-homepage')
+                            @slot('order')
+                                order-lg-2 order-md-3 order-3
+                            @endslot
                             @slot('color')
                                 red
                             @endslot
@@ -135,10 +150,34 @@
                                 {{ asset('images/banner/kagumi_cross_platform_streaming.png') }}?v=1.00.0
                             @endslot
                             @slot('title')
-                                Cross Platform Streaming
+                                Youtube Management
+                            @endslot
+                            @slot('id')
+                                2
                             @endslot
                         @endcomponent
-                        @component('components.custom.layanan-card')
+                        <div class="d-lg-none w-100 order-md-3 d-md-flex"></div>
+                        @component('components.custom.layanan-card-homepage')
+                            @slot('order')
+                                order-lg-3 order-md-3 order-2
+                            @endslot
+                            @slot('color')
+                                red
+                            @endslot
+                            @slot('url')
+                                {{ asset('images/banner/kagumi_online_event.png') }}?v=1.00.0
+                            @endslot
+                            @slot('title')
+                                Tiktok Management
+                            @endslot
+                            @slot('id')
+                                3
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-card-homepage')
+                            @slot('order')
+                                order-md-5 order-4
+                            @endslot
                             @slot('color')
                                 white
                             @endslot
@@ -146,31 +185,24 @@
                                 {{ asset('images/banner/kagumi_content_creator.png') }}?v=1.00.0
                             @endslot
                             @slot('title')
-                                Content Creator Management
+                                Academy Streamer
+                            @endslot
+                            @slot('id')
+                                4
                             @endslot
                         @endcomponent
-                        @component('components.custom.layanan-card')
-                            @slot('color')
-                                red
-                            @endslot
-                            @slot('url')
-                                {{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0
-                            @endslot
-                            @slot('title')
-                                Digital Activation
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-card')
-                            @slot('color')
-                                white
-                            @endslot
-                            @slot('url')
-                                {{ asset('images/banner/kagumi_multimedia_specialist.png') }}?v=1.00.0
-                            @endslot
-                            @slot('title')
-                                Multimedia Specialist
-                            @endslot
-                        @endcomponent
+                    </div>
+                    <div class="mt-5 d-flex flex-column align-items-center">
+
+                        <div class="card card-penjelasan border-0 ">
+                            <div class="card-body">
+                                <h3 class="title" id="title-penjelasan">Digital Activation </h3>
+                                <p id="content-penjelasan">Strategi dimana sebuah brand menargetkan mikro audiens dan
+                                    melakukan interaksi antara
+                                    brand dengan konsumen maupun calon konsumen melalui berbagai aktivitas. Hal tersebut
+                                    berguna untuk membangun serta meningkatkan brand awareness (kesadaran merek).</p>
+                            </div>
+                        </div>
                     </div>
                     {{-- <div class="row topmargin-lg mx-auto" style="max-width: 1000px;">
 
@@ -462,13 +494,13 @@
                     </div>
                 </div>
 
-                <div class="row ">
+                <div class="row justify-content-center align-items-center">
 
-                    <div class="col-lg-4 d-none d-md-block"
-                        style="background: url('{{ asset('images/group.png') }}') center center no-repeat; background-size: cover;">
-
+                    <div class="col-lg-5 col-md-10 ">
+                        <img src="{{ asset('images/group.png') }}" alt="" class="w-100"
+                            style="object-fit: contain">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-7">
                         <div class="inner-padding"></div>
                         @component('components.custom.itm-kom')
                             @slot('side')
@@ -478,7 +510,7 @@
                                 https://heygom.com/wp-content/uploads/2018/07/7-Unique-Ways-to-Increase-Brand-Recognition-in-2018.jpg
                             @endslot
                             @slot('title')
-                                Two-ways conversation → Increase brand visibility
+                                Dapat meningkatkan interaksi di media sosial
                             @endslot
                         @endcomponent
                         @component('components.custom.itm-kom')
@@ -489,7 +521,7 @@
                                 https://fowmedia.com/wp-content/uploads/2017/04/8-Key-Steps-to-Driving-Employee-Engagement.jpg
                             @endslot
                             @slot('title')
-                                Actively drive engagement, keeps them coming back for more
+                                Bisa mendapatkan brand awareness lebih luas
                             @endslot
                         @endcomponent
                         @component('components.custom.itm-kom')
@@ -500,7 +532,7 @@
                                 https://komerce.id/blog/wp-content/uploads/2021/06/pengertian-customer.jpg
                             @endslot
                             @slot('title')
-                                Customers actively involved with the development of the brand
+                                Membangun dan memberikan pembelaan di media sosial kepada brand
                             @endslot
                         @endcomponent
                         @component('components.custom.itm-kom')
@@ -511,20 +543,10 @@
                                 https://adcumulus.com/app/uploads/2017/06/brand-reputation-protection.png
                             @endslot
                             @slot('title')
-                                Building and protecting a brand’s reputation
+                                Merubah pelanggan musiman menjadi pelanggan yang loyal terhadap brand
                             @endslot
                         @endcomponent
-                        @component('components.custom.itm-kom')
-                            @slot('side')
-                                back
-                            @endslot
-                            @slot('url')
-                                https://www.edesk.com/wp-content/uploads/2020/06/ecommerce-customer-loyalty.png
-                            @endslot
-                            @slot('title')
-                                More chance to turn ordinary customer into loyal advocates
-                            @endslot
-                        @endcomponent
+
                         <div class="inner-padding"></div>
                         {{-- <div class="row align-items-stretch grid-border clearfix">
                             <div class="col-lg-4 col-md-6 ">
@@ -620,37 +642,53 @@
                         style="max-width: 700px; font-size: 40px;">
                         Siapa Saja Klien <span class="red-part">Kagumi</span>?</h2>
                     <div class="inner-padding"></div>
-                    <div class="row">
-                        <div class="col-md-3 col-6">
-                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png"
-                                alt="" class="img-client shadow rounded">
-                            <h5 class="title-client">PT .DTAt</h5>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-6 col-lg-2 mb-3">
+                            <div class="card-client p-2">
+                                <img src="{{ asset('images/klien/csb-kagumi.png') }}" alt="sobatbadak"
+                                    class="img-client shadow rounded bg-white">
+                                <h5 class="title-client">Club Sobat Badak</h5>
+                            </div>
+
                         </div>
-                        <div class="col-md-3 col-6">
-                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png"
-                                alt="" class="img-client shadow rounded">
-                            <h5 class="title-client">PT .DTAt</h5>
+                        <div class="col-md-3 col-6 col-lg-2 mb-3">
+                            <div class="card-client p-2">
+                                <img src="{{ asset('images/klien/isea-kagumi.png') }}" alt="sobatbadak"
+                                    class="img-client shadow rounded bg-white">
+                                <h5 class="title-client">ISEA</h5>
+                            </div>
+
                         </div>
-                        <div class="col-md-3 col-6">
-                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png"
-                                alt="" class="img-client shadow rounded">
-                            <h5 class="title-client">PT .DTAt</h5>
+                        <div class="col-md-3 col-6 col-lg-2 mb-3">
+                            <div class="card-client p-2">
+                                <img src="{{ asset('images/klien/warisan-kagumi.png') }}" alt="sobatbadak"
+                                    class="img-client shadow rounded bg-white">
+                                <h5 class="title-client">Warisan</h5>
+                            </div>
+
                         </div>
-                        <div class="col-md-3 col-6">
-                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png"
-                                alt="" class="img-client shadow rounded">
-                            <h5 class="title-client">PT .DTAt</h5>
+                        <div class="col-md-3 col-6 col-lg-2 mb-3">
+                            <div class="card-client p-2">
+                                <img src="{{ asset('images/klien/wgm-kagumi.png') }}" alt="sobatbadak"
+                                    class="img-client shadow rounded bg-white">
+                                <h5 class="title-client">Warisan Gajah Mada</h5>
+                            </div>
+
                         </div>
-                        <div class="col-md-3 col-6">
-                            <img src="https://www.kindpng.com/picc/m/257-2576933_transparent-fake-png-dummy-company-logo-png-png.png"
-                                alt="" class="img-client shadow rounded">
-                            <h5 class="title-client">PT .DTAt</h5>
+                        <div class="col-md-3 col-6 col-lg-2 mb-3">
+                            <div class="card-client p-2">
+                                <img src="{{ asset('images/klien/yokesen-kagumi.png') }}" alt="sobatbadak"
+                                    class="img-client shadow rounded bg-white">
+                                <h5 class="title-client">Yokesen</h5>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </section>
-            <div class="section m-0 dark section-testi"
+            {{-- Testimoni Section --}}
+            {{-- <div class="section m-0 dark section-testi"
                 style="background-image: url('https://image.freepik.com/free-photo/solid-concrete-wall-textured-backdrop_53876-129493.jpg'); ">
 
                 <div class="container clearfix">
@@ -661,40 +699,40 @@
                         </div>
                         <div class="col-md-7">
                             <!-- <div class="fslider testimonial testimonial-full bg-transparent border-0 shadow-none p-0"
-                                    data-arrows="false">
-                                    <div class="flexslider">
-                                        <div class="slider-wrap">
-                                            <div class="slide">
+                                                    data-arrows="false">
+                                                    <div class="flexslider">
+                                                        <div class="slider-wrap">
+                                                            <div class="slide">
 
-                                            </div>
-                                            <div class="slide">
-                                                <div class="testi-content">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
-                                                    </div>                                               <p>Natus voluptatum enim quod necessitatibus quis expedita harum
-                                                        provident eos obcaecati id culpa corporis molestias.</p>
-                                                    <div class="testi-meta">
-                                                        Collis Ta'eed
-                                                        <span>Envato Inc.</span>
+                                                            </div>
+                                                            <div class="slide">
+                                                                <div class="testi-content">
+                                                                    <div class="d-flex align-items-center justify-content-center">
+                                                                        <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
+                                                                    </div>                                               <p>Natus voluptatum enim quod necessitatibus quis expedita harum
+                                                                        provident eos obcaecati id culpa corporis molestias.</p>
+                                                                    <div class="testi-meta">
+                                                                        Collis Ta'eed
+                                                                        <span>Envato Inc.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="slide">
+                                                                <div class="testi-content">
+                                                                    <div class="d-flex align-items-center justify-content-center">
+                                                                        <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
+                                                                    </div>                                             <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur
+                                                                        ullam quibusdam cum libero illo rerum!</p>
+                                                                    <div class="testi-meta">
+                                                                        John Doe
+                                                                        <span>XYZ Inc.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="slide">
-                                                <div class="testi-content">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <img src="https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90" alt="" class="img-testi-new">
-                                                    </div>                                             <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur
-                                                        ullam quibusdam cum libero illo rerum!</p>
-                                                    <div class="testi-meta">
-                                                        John Doe
-                                                        <span>XYZ Inc.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                 -->
+                                                 -->
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -753,10 +791,10 @@
 
                 </div>
 
-            </div>
-            <div class="" style="height: 65px;">
+            </div> --}}
+            {{-- <div class="" style="height: 65px;">
 
-            </div>
+            </div> --}}
             <div id="section-contact" class="page-section section-form pt-4" style="padding-bottom: 20px !important">
 
 
@@ -776,7 +814,8 @@
                                     <div class="form-result"></div>
 
                                     <form class="row mb-0 meeting-form" id="template-contactform"
-                                        name="template-contactform" action="{{ route('postMeeting') }}" method="post">
+                                        name="template-contactform" action="{{ route('postMeeting') }}"
+                                        method="post">
                                         @csrf
 
 
@@ -1007,7 +1046,31 @@
         }
     </script>
 
+    <script>
+        let title = ['Digital Activation ', 'YouTube Management', 'TikTok Management', 'Academy Streamer']
+        let content = [
+            'Strategi dimana sebuah brand menargetkan mikro audiens dan melakukan interaksi antara brand dengan konsumen maupun calon konsumen melalui berbagai aktivitas. Hal tersebut berguna untuk membangun serta meningkatkan brand awareness (kesadaran merek). ',
+            'Membantu mengoptimalkan saluran YouTube milik kamu dimulai dari merencanakan konten-konten (content planning), produksi (video production), editing, optimizing dan juga monetizing.',
+            'Kagumi siap bantu untuk memaksimalkan platform TikTok kamu dengan menyiapkan segala halnya termasuk ide content planning, produksi video, optimizing, dan menaikan penjualanmu dengan TikTok Shop! ',
+            'Menjadi seorang streamer handal sekarang bukan sebuah mimpi lagi! Kagumi akan membantu kamu dari segi public speaking, merencanakan konten-konten, hingga tahap produksi, dan persiapan seluruh alat produksi, semua akan diatur Kagumi!'
+        ]
+        $('.layanan.homepage').click(function() {
+            let temp = $(this).data('id');
+            let id = parseInt(temp) - parseInt(1);
 
+            $('.card-penjelasan').removeClass('active')
+
+            sleep(500).then(() => {
+                $('#title-penjelasan').html(title[id]);
+                $('#content-penjelasan').html(content[id]);
+                $('.card-penjelasan').addClass('active')
+            })
+        })
+
+        function sleep(time) {
+            return new Promise((resolve) => setTimeout(resolve, time));
+        }
+    </script>
     @if (Session::has('fullBooked'))
         <script>
             Swal.fire(

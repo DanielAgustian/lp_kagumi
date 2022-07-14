@@ -21,7 +21,7 @@ use App\Http\Controllers\DetailLeadController;
 // Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
 Route::get('/', [LandingController::class, 'homepageNew'])->name('homepageNew');
 Route::get('/contact-us', [LandingController::class, 'contactUs'])->name('contactUs');
-
+Route::get('/portofolio',  [LandingController::class, 'portofolioPage'])->name('portofolioPage');
 
 // Landing Page
 Route::get('/digital-activation-gamification', [LandingController::class, 'landing'])->name('landingPage');
