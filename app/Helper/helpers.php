@@ -32,6 +32,9 @@ function set_active_bar($uri, $output = ' active')
    }
  }
 }
+
+
+
 function replaceNumber($whatsapp){
 
     $whatsapp = str_replace('-','',$whatsapp);

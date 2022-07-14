@@ -319,19 +319,19 @@
                             <ul class="one-page-menu menu-container {{ set_none_navbar() }}"
                                 data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 
-                                <li class="menu-item">
+                                {{-- <li class="menu-item">
                                     <a href="#" class="menu-link">
                                         <div>About</div>
                                     </a>
-                                </li>
+                                </li> --}}
 
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link" data-href="#section-services">
+                                    <a href="#" class="menu-link service-link" data-href-2="#section-services">
                                         <div>Services</div>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link" data-href="#section-client">
+                                    <a href="#" class="menu-link our-client" data-href-2="#section-client">
                                         <div>Our Client</div>
                                     </a>
                                 </li>
@@ -340,6 +340,11 @@
                                         <div>Blog</div>
                                     </a>
                                 </li> -->
+                                <li class="menu-item {{ set_active_bar('portofolioPage') }}">
+                                    <a href="{{ route('portofolioPage') }}" class="menu-link">
+                                        <div>Portofolio</div>
+                                    </a>
+                                </li>
                                 <li class="menu-item {{ set_active_bar('contactUs') }}">
                                     <a href="{{ route('contactUs') }}" class="menu-link">
                                         <div>Contact Us</div>
@@ -380,10 +385,12 @@
                                 <h4>Site Links</h4>
 
                                 <ul class="list-unstyled footer-site-links mb-0">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Our Client</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    {{-- <li><a href="#" class="about-us">About Us</a></li> --}}
+                                    <li><a href="#" class="service-link" data-href="#section-services">Services</a></li>
+                                    <li><a href="#" class="our-client"  data-href="#section-client">Our Client</a></li>
+
+                                    {{-- <li><a href="#">Blog</a></li> --}}
+                                    <li><a href="{{ route('portofolioPage') }}">Portofolio</a></li>
                                     <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -481,6 +488,28 @@
                 });
             });
         });
+    </script>
+    <script>
+        let homeRoute = '{{route('homepageNew')}}'+"/"
+        $(function() {
+            console.log(window.location.href);
+            console.log(homeRoute);
+            let tempUrl = window.location.href.split('?');
+            if (tempUrl[0] != homeRoute) {
+                $('.service-link').attr('href', homeRoute+'#section-services');
+                $('.our-client').attr('href', homeRoute+'#section-client')
+                $('.service-link').removeAttr('data-href');
+                $('.our-client').removeAttr('data-href');
+            }
+        })
+        $('.service-link').click(function(){
+            let data = $(this).attr('href');
+            let tempUrl = window.location.href.split('?');
+            console.log('click');
+            if (tempUrl[0] != homeRoute) {
+                // location.href = data;
+            }
+        })
     </script>
     <script>
         $(function() {

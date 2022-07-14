@@ -483,7 +483,7 @@
 
             </div> --}}
 
-            <div id="section-services" class="page-section pt-0">
+            <div id="section-services" class="page-section pt-0" style="padding-bottom: 80px !important">
 
                 <div class="section m-0">
                     <div class="container clearfix">
@@ -634,14 +634,15 @@
 
 
             </div>
-            <section class="section-client" id="section-client">
+            <section class="section-client  pt-5" id="section-client">
                 <div class="container">
+                    <div class="inner-padding"></div>
                     {{-- <h2 class="title-part text-center"> <img src="{{ asset('images/logo-kagumi.png') }}" alt=""
                             class=""> Siapa Saja Klien <span>Kagumi</span>?</h2> --}}
-                    <h2 class="text-center mx-auto bottommargin font-body title-section "
+                    <h2 class="text-center mx-auto bottommargin font-body title-section mb-4"
                         style="max-width: 700px; font-size: 40px;">
                         Siapa Saja Klien <span class="red-part">Kagumi</span>?</h2>
-                    <div class="inner-padding"></div>
+                   
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-6 col-lg-2 mb-3">
                             <div class="card-client p-2">
