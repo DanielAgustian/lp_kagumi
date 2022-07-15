@@ -1,7 +1,7 @@
 @extends('master2')
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}?v=1.0.0">
+    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}?v=1.0.1">
 
     <style>
         @media screen and (max-width: 996px) {
@@ -408,9 +408,8 @@
                     </div>
                 </div>
 
-                <div class="topmargin center"><a href="#"
-                        class="button button-border button-circle fw-semibold">View More
-                        Projects</a></div>
+                <div class="topmargin center"><a href="{{route('homepageNew')}}#section-contact"
+                        class="button button-border button-circle fw-semibold">Hubungi Kami!</a></div>
 
             </div>
 

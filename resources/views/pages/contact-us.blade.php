@@ -1,7 +1,7 @@
 @extends('master2')
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}?v=1.0.0">
+    <link rel="stylesheet" href="{{ asset('asset/css/contact-us.css') }}?v=1.0.1">
 @endsection
 @section('banner')
     <section id="slider" class="slider-element bgchanger include-header mb-0 "

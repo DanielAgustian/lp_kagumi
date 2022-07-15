@@ -126,6 +126,7 @@ section {
     border-radius: 8px;
     width: 100%;
     height: 175px;
+    transition: all 0.3s;
 }
 .layanan .img-layanan{
     height: 75px;
@@ -183,8 +184,8 @@ section {
 }
 .img-komunitas{
     width: 100%;
-    height: 100px;
-    object-fit: cover;
+    height: 115px;
+    object-fit: contain;
 }
 .item-kom{
     width: 100%;

@@ -11,13 +11,13 @@
     </style>
 @endsection
 @section('banner')
-    <section id="slider" class="slider-element min-vh-100 bgchanger include-header"
+    <section id="slider" class="detect-sect slider-element min-vh-100 bgchanger include-header"
         style="background-color: #de1d38 ; background-image: url('{{ asset('images/watch-bg.png') }}'); background-position: center center; background-size: cover;">
         <div class="slider-inner">
 
             <div class="vertical-middle slider-element-fade">
                 <div class="container py-5">
-                    <div class="row align-items-center justify-content-center">
+                    <div class="row align-items-center justify-content-center mt-3">
                         <div class=" col-lg-6 order-lg-1 order-2 text-center text-md-start">
                             <div class="emphasis-title mb-0">
 
@@ -58,27 +58,24 @@
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_content_creator.png') }}?v=1.00.0"
+                                        <img src="{{ asset('images/banner/digital-activation.png') }}?v=1.00.0"
                                             alt="Watch">
 
                                     </div>
+                                    
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_cross_platform_streaming.png') }}?v=1.00.0"
+                                        <img src="{{ asset('images/banner/tiktok-management.png') }}?v=1.00.0"
                                             alt="Watch">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0"
+                                        <img src="{{ asset('images/banner/youtube-management.png') }}?v=1.00.0"
                                             alt="Watch">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_multimedia_specialist.png') }}?v=1.00.0"
+                                        <img src="{{ asset('images/banner/academy-streamer.png') }}?v=1.00.0"
                                             alt="Watch">
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('images/banner/kagumi_online_event.png') }}?v=1.00.0"
-                                            alt="Watch">
-                                    </div>
-
+                                    
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -103,7 +100,7 @@
     <section id="content">
         <div class="content-wrap py-0">
 
-            <div id="section-services" class="center page-section">
+            <div id="section-services" class="center page-section detect-sect">
 
                 <div class="container clearfix">
 
@@ -120,7 +117,7 @@
                             <i class="icon-angle-right"></i></a></p> --}}
 
                     <div class="clear"></div>
-                    <div class="row justify-content-center  wow fadeInLeft" data-wow-duration="0.9s">
+                    <div class="row justify-content-center  " data-animate="fadeInUp" data-delay="150">
                         @component('components.custom.layanan-card-homepage')
                             @slot('order')
                                 order-1
@@ -129,7 +126,7 @@
                                 white
                             @endslot
                             @slot('url')
-                                {{ asset('images/banner/kagumi_digital_activation.png') }}?v=1.00.0
+                                {{ asset('images/banner/digital-activation.png') }}?v=1.00.0
                                
                             @endslot
                             @slot('title')
@@ -147,7 +144,7 @@
                                 red
                             @endslot
                             @slot('url')
-                                {{ asset('images/banner/kagumi_cross_platform_streaming.png') }}?v=1.00.0
+                                {{ asset('images/banner/youtube-management.png') }}
                             @endslot
                             @slot('title')
                                 Youtube Management
@@ -165,7 +162,7 @@
                                 red
                             @endslot
                             @slot('url')
-                                {{ asset('images/banner/kagumi_online_event.png') }}?v=1.00.0
+                                {{ asset('images/banner/tiktok-management.png') }}
                             @endslot
                             @slot('title')
                                 Tiktok Management
@@ -182,7 +179,7 @@
                                 white
                             @endslot
                             @slot('url')
-                                {{ asset('images/banner/kagumi_content_creator.png') }}?v=1.00.0
+                                {{ asset('images/banner/academy-streamer.png') }}
                             @endslot
                             @slot('title')
                                 Academy Streamer
@@ -320,170 +317,8 @@
 
             </div>
 
-            {{-- <div id="section-works" class="page-section pt-0">
 
-                <div class="section m-0">
-                    <div class="container clearfix">
-                        <div class="mx-auto center" style="max-width: 900px;">
-                            <h2 class="mb-0 fw-light ls1">We create &amp; craft projects that ooze creativity in every
-                                aspect. We try to create a benchmark in everything we do. Take a moment to browse through
-                                some of our recent completed work.</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Items
-                    ============================================= -->
-                <div class="portfolio grid-container row g-0">
-
-                    <article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/1.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Open Imagination</a></h3>
-                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/2.jpg" alt="Locked Steel Gate">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Locked Steel Gate</a></h3>
-                                            <span><a href="#">Illustrations</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/3.jpg" alt="Mac Sunglasses">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Mac Sunglasses</a></h3>
-                                            <span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/4.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Open Imagination</a></h3>
-                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/5.jpg" alt="Console Activity">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Console Activity</a></h3>
-                                            <span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/6.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-                                            <h3><a href="#">Open Imagination</a></h3>
-                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="one-page/images/portfolio/mixed/7.jpg" alt="Backpack Contents">
-                                </a>
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-                                        <div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
-                                            data-hover-animate-out="fadeOutDownSmall" data-hover-speed="350">
-                                            <h3><a href="#">Backpack Contents</a></h3>
-                                            <span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                </div><!-- #portfolio end -->
-
-                <div class="topmargin center"><a href="#" class="button button-border button-circle fw-semibold">View More
-                        Projects</a></div>
-
-            </div> --}}
-
-            <div id="section-services" class="page-section pt-0" style="padding-bottom: 80px !important">
+            <div id="section-value" class="page-section detect-sect pt-0" style="padding-bottom: 80px !important">
 
                 <div class="section m-0">
                     <div class="container clearfix">
@@ -496,18 +331,18 @@
 
                 <div class="row justify-content-center align-items-center">
 
-                    <div class="col-lg-5 col-md-10 ">
-                        <img src="{{ asset('images/group.png') }}" alt="" class="w-100"
+                    <div class="col-lg-5 col-md-8 col-11 ">
+                        <img src="{{ asset('images/advan/komunitas-kagumi.png') }}" alt="" class="w-100 mt-lg-0 mt-4"
                             style="object-fit: contain">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 " data-animate="fadeInRight" data-delay="150">
                         <div class="inner-padding"></div>
                         @component('components.custom.itm-kom')
                             @slot('side')
                                 back
                             @endslot
                             @slot('url')
-                                https://heygom.com/wp-content/uploads/2018/07/7-Unique-Ways-to-Increase-Brand-Recognition-in-2018.jpg
+                               {{asset('images/advan/interaksi-medsos.png')}}
                             @endslot
                             @slot('title')
                                 Dapat meningkatkan interaksi di media sosial
@@ -518,7 +353,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                https://fowmedia.com/wp-content/uploads/2017/04/8-Key-Steps-to-Driving-Employee-Engagement.jpg
+                                {{asset('images/advan/brand-awareness.png')}}
                             @endslot
                             @slot('title')
                                 Bisa mendapatkan brand awareness lebih luas
@@ -529,7 +364,7 @@
                                 back
                             @endslot
                             @slot('url')
-                                https://komerce.id/blog/wp-content/uploads/2021/06/pengertian-customer.jpg
+                            {{asset('images/advan/pembelaan-medsos.png')}}
                             @endslot
                             @slot('title')
                                 Membangun dan memberikan pembelaan di media sosial kepada brand
@@ -540,7 +375,7 @@
                                 front
                             @endslot
                             @slot('url')
-                                https://adcumulus.com/app/uploads/2017/06/brand-reputation-protection.png
+                            {{asset('images/advan/pelanggan-loyal.png')}}
                             @endslot
                             @slot('title')
                                 Merubah pelanggan musiman menjadi pelanggan yang loyal terhadap brand
@@ -634,7 +469,7 @@
 
 
             </div>
-            <section class="section-client  pt-5" id="section-client">
+            <section class="section-client detect-sect  pt-5" id="section-client" data-animate="fadeInDown" data-delay="150">
                 <div class="container">
                     <div class="inner-padding"></div>
                     {{-- <h2 class="title-part text-center"> <img src="{{ asset('images/logo-kagumi.png') }}" alt=""
@@ -672,7 +507,7 @@
                             <div class="card-client p-2">
                                 <img src="{{ asset('images/klien/wgm-kagumi.png') }}" alt="sobatbadak"
                                     class="img-client shadow rounded bg-white">
-                                <h5 class="title-client">Warisan Gajah Mada</h5>
+                                <h5 class="title-client">Warisan Gajahmada</h5>
                             </div>
 
                         </div>
@@ -796,7 +631,7 @@
             {{-- <div class="" style="height: 65px;">
 
             </div> --}}
-            <div id="section-contact" class="page-section section-form pt-4" style="padding-bottom: 20px !important">
+            <div id="section-contact" class="page-section  section-form pt-4" style="padding-bottom: 20px !important">
 
 
 
@@ -814,7 +649,7 @@
 
                                     <div class="form-result"></div>
 
-                                    <form class="row mb-0 meeting-form" id="template-contactform"
+                                    <form class="row mb-0 meeting-form detect-sect" id="template-contactform"
                                         name="template-contactform" action="{{ route('postMeeting') }}"
                                         method="post">
                                         @csrf

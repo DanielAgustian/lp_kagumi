@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Mediakagumi.com" />
     <meta name="google-site-verification" content="oQk4soQuvFJqEjTkl6S6xFgrd-MYazzr1S_eapX8ikE" />
-    
+
     <!-- Stylesheets
  ============================================= -->
     <link
@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/template/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.1.1" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/custom.css') }}?v=1.1.2" type="text/css" />
     @yield('css')
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -386,8 +386,10 @@
 
                                 <ul class="list-unstyled footer-site-links mb-0">
                                     {{-- <li><a href="#" class="about-us">About Us</a></li> --}}
-                                    <li><a href="#" class="service-link" data-href="#section-services">Services</a></li>
-                                    <li><a href="#" class="our-client"  data-href="#section-client">Our Client</a></li>
+                                    <li><a href="#" class="service-link"
+                                            data-href="#section-services">Services</a></li>
+                                    <li><a href="#" class="our-client" data-href="#section-client">Our
+                                            Client</a></li>
 
                                     {{-- <li><a href="#">Blog</a></li> --}}
                                     <li><a href="{{ route('portofolioPage') }}">Portofolio</a></li>
@@ -490,19 +492,18 @@
         });
     </script>
     <script>
-        let homeRoute = '{{route('homepageNew')}}'+"/"
+        let homeRoute = '{{ route('homepageNew') }}' + "/"
         $(function() {
-            console.log(window.location.href);
-            console.log(homeRoute);
+
             let tempUrl = window.location.href.split('?');
-            if (tempUrl[0] != homeRoute) {
-                $('.service-link').attr('href', homeRoute+'#section-services');
-                $('.our-client').attr('href', homeRoute+'#section-client')
-                $('.service-link').removeAttr('data-href');
-                $('.our-client').removeAttr('data-href');
-            }
+
+            $('.service-link').attr('href', homeRoute + '#section-services');
+            $('.our-client').attr('href', homeRoute + '#section-client')
+            $('.service-link').removeAttr('data-href');
+            $('.our-client').removeAttr('data-href');
+
         })
-        $('.service-link').click(function(){
+        $('.service-link').click(function() {
             let data = $(this).attr('href');
             let tempUrl = window.location.href.split('?');
             console.log('click');
@@ -510,6 +511,38 @@
                 // location.href = data;
             }
         })
+    </script>
+    <script>
+        function removeActive(){
+            let docAll = document.querySelectorAll(`.menu-link[data-href-2]`);
+            docAll.forEach(elem =>{
+                elem.parentNode.classList.remove('active');
+            })
+
+        }
+    </script>
+    <script>
+        // let queryDoc = null;
+        let observer = new IntersectionObserver(function(entries) {
+            var ele = entries.filter(entry => entry.isIntersecting);
+            var queryDoc = null;
+            if (ele.length > 0) {
+                ele = ele[0].target;
+                id = "#"+ ele.id;
+                var queryDoc = document.querySelectorAll(`.menu-link[data-href-2="${id}"]`);
+                removeActive();
+                if (queryDoc.length > 0) {
+                    
+                    let parent = queryDoc[0].parentNode;
+                    parent.classList.add('active');
+                    console.log(parent);
+                }
+                
+                
+            }
+        });
+        document.querySelectorAll('.detect-sect')
+            .forEach(ele => observer.observe(ele));
     </script>
     <script>
         $(function() {
@@ -539,7 +572,6 @@
                 'success'
             );
         </script>
-
     @endif
     @yield('js')
 </body>
